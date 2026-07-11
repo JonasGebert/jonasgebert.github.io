@@ -27,7 +27,15 @@ export const hobbies: Hobby[] = [
     name: "Motorrad",
     icon: "bike",
     note: "Zwei Räder, volle Konzentration.",
-    images: [],
+    images: [
+      {
+        src: "/assets/images/Motorrad_offroad.png",
+        alt: "Motorrad im Gelände",
+        caption: "Offroad unterwegs",
+        width: 768,
+        height: 1364,
+      },
+    ],
   },
   {
     slug: "3d-druck",
@@ -48,7 +56,15 @@ export const hobbies: Hobby[] = [
     name: "Golf",
     icon: "golf",
     note: "Präzision, Geduld und Konzentration — auf dem Platz statt an der Werkbank.",
-    images: [],
+    images: [
+      {
+        src: "/assets/images/Golf_Driving_range.jpg",
+        alt: "Golf auf der Driving Range",
+        caption: "Auf der Driving Range",
+        width: 2336,
+        height: 1080,
+      },
+    ],
   },
   {
     slug: "kochen",
@@ -62,7 +78,64 @@ export const hobbies: Hobby[] = [
     name: "Tauchen",
     icon: "diving",
     note: "Tauchschein — die Ruhe und Welt unter Wasser.",
-    images: [],
+    images: [
+      {
+        src: "/assets/images/Arabischer_Doktorfisch.png",
+        alt: "Arabischer Doktorfisch",
+        caption: "Arabischer Doktorfisch",
+        width: 1376,
+        height: 768,
+      },
+      {
+        src: "/assets/images/Australischer_Tüpfelrochen.png",
+        alt: "Australischer Tüpfelrochen",
+        caption: "Australischer Tüpfelrochen",
+        width: 1376,
+        height: 768,
+      },
+      {
+        src: "/assets/images/Blaupunktrochen.png",
+        alt: "Blaupunktrochen",
+        caption: "Blaupunktrochen",
+        width: 1376,
+        height: 768,
+      },
+      {
+        src: "/assets/images/Gestreifter_Halbschnäbler.png",
+        alt: "Gestreifter Halbschnäbler",
+        caption: "Gestreifter Halbschnäbler",
+        width: 1376,
+        height: 768,
+      },
+      {
+        src: "/assets/images/Meeräschen.png",
+        alt: "Meeräschen",
+        caption: "Meeräschen",
+        width: 1364,
+        height: 768,
+      },
+      {
+        src: "/assets/images/Meeräschen2.png",
+        alt: "Meeräschen",
+        caption: "Meeräschen",
+        width: 1132,
+        height: 944,
+      },
+      {
+        src: "/assets/images/Scherenschwanz_Sergeant.png",
+        alt: "Scherenschwanz-Sergeant",
+        caption: "Scherenschwanz-Sergeant",
+        width: 1364,
+        height: 768,
+      },
+      {
+        src: "/assets/images/Weißfleckenkugelfisch.png",
+        alt: "Weißfleckenkugelfisch",
+        caption: "Weißfleckenkugelfisch",
+        width: 1376,
+        height: 768,
+      },
+    ],
   },
   {
     slug: "segeln",
@@ -108,6 +181,20 @@ export const travelPhotos: TravelPhoto[] = [
     caption: "London 2023 — Tower Bridge",
     width: 1524,
     height: 704,
+  },
+  {
+    src: "/assets/images/Quadtour_Djerba_2023.jpg",
+    alt: "Quadtour auf Djerba, 2023",
+    caption: "Djerba 2023 — Quadtour",
+    width: 4000,
+    height: 2252,
+  },
+  {
+    src: "/assets/images/Thailand_2019.jpg",
+    alt: "Thailand, 2019",
+    caption: "Thailand 2019",
+    width: 4032,
+    height: 1908,
   },
 ];
 
