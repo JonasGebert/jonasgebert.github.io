@@ -1,52 +1,48 @@
-# jonasgebert.github.io — Portfolio
+# Portfolio — Jonas Gebert
 
-Persönliche Portfolio-Website von Jonas Gebert. Dark-Mode-SPA mit Glassmorphism-Sidebar,
-interaktiver Lebenslauf-Timeline, vollständigen Noten, Zeugnis-Detailseiten und PDF-Downloads.
+Persönliche Portfolio-Website. Ein Ort für Werdegang, Qualifikationen und Zeugnisse —
+als schlanke, statisch ausgelieferte Single-Page-App.
 
-Next.js 15 (App Router) · TypeScript · Tailwind CSS v4 · statischer Export · Deployment via GitHub Actions
+**Live:** https://jonasgebert.github.io
 
-## Deployment
+## Features
 
-Jeder Push auf `main` baut und veröffentlicht die Seite automatisch
-(`.github/workflows/deploy.yml`).
+- **Interaktive Lebenslauf-Timeline** — Stationen aus Ausbildung, Studium und Beruf
+- **Vollständiger Notenspiegel** — Studien- und Ausbildungsnoten auf einen Blick
+- **Zeugnis-Detailseiten** — jedes Zeugnis als eigene Seite (SSG) mit PDF-Download
+- **Skills & Zertifikate** — thematisch gruppiert
+- **Dark-Mode-Design** — Glassmorphism-Sidebar, dezente Scroll-Animationen
 
+## Tech-Stack
 
-```bash
-git add -A
-git commit -m "Portfolio"
-git push origin main
-```
+Next.js 15 (App Router) · React 19 · TypeScript · Tailwind CSS v4 · `marked` für
+Markdown → HTML zur Build-Zeit. Ausgeliefert als statischer Export, deployed über
+GitHub Actions bei jedem Push auf `main`.
 
-Danach: https://jonasgebert.github.io
+Animationen laufen bewusst über CSS + IntersectionObserver statt einer Animations-Library,
+um Bundle-Größe und Abhängigkeiten klein zu halten.
 
-
-## Architektur
+## Projektstruktur
 
 ```
 content/              Markdown-Quelldateien (about-me, Ziel, zeugnisse/*.md)
-src/content/          Typisierte Content-Module (Profil, Timeline, Noten, Skills, Zeugnis-Metadaten)
-src/lib/markdown.ts   Markdown → HTML zur Build-Zeit (marked)
+src/content/          Typisierte Content-Module (Profil, Timeline, Noten, Skills)
+src/lib/markdown.ts   Markdown → HTML zur Build-Zeit
 src/components/       Wiederverwendbare UI-Komponenten
-src/app/              App Router: SPA-Hauptseite + /zeugnisse/[slug]/ (SSG)
-public/documents/     Zeugnis-PDFs (Download-Links)
-public/assets/        Platzhalterbilder (SVG)
+src/app/              App Router: Hauptseite + /zeugnisse/[slug]/ (SSG)
+public/documents/     Zeugnis-PDFs
+public/assets/        Bilder
 ```
 
+## Lokal starten
 
+```bash
+npm install
+npm run dev      # Entwicklungsserver auf http://localhost:3000
+npm run build    # Produktions-Build (statischer Export)
+```
 
-## Inhalte ändern
-
-- **Texte/Daten:** `src/content/*.ts` — pushen genügt, Actions baut neu
-- **Zeugnisse:** Markdown in `content/zeugnisse/*.md` → wird beim Build zu HTML-Detailseiten
-- **Echtes Foto:** Bild als `public/assets/images/portrait.jpg` ablegen und in
-  `src/components/Hero.tsx` den `src`-Pfad ändern
-- **Projekte/Reisen freischalten:** `src/content/extras.ts` ergänzen; die
-  Coming-Soon-Sektionen sind dafür vorbereitet
-
-Animationen laufen über CSS + IntersectionObserver (`src/components/Reveal.tsx`) —
-bewusst ohne framer-motion, um Bundle-Größe und Abhängigkeiten klein zu halten.
-
-## Hinweis Datenschutz
+## Datenschutz
 
 Personenbezogene Daten (Adresse, Geburtsdatum, Matrikelnummer, private E-Mail)
 wurden aus Inhalten, Quellcode und PDFs entfernt bzw. geschwärzt.
