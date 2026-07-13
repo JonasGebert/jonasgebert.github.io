@@ -35,6 +35,20 @@ export const hobbies: Hobby[] = [
         width: 768,
         height: 1364,
       },
+      {
+        src: "/assets/images/Motorrad_Feld.png",
+        alt: "Motorrad auf einem Feld",
+        caption: "Feldfahrt",
+        width: 1194,
+        height: 896,
+      },
+      {
+        src: "/assets/images/Motorrad_Müllberg.png",
+        alt: "Motorrad auf dem Müllberg",
+        caption: "Müllbergfahrt",
+        width: 1194,
+        height: 896,
+      },
     ],
   },
   {
