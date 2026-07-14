@@ -13,7 +13,22 @@ export const hobbies: Hobby[] = [
     name: "Elektronik",
     icon: "zap",
     note: "Vom Beruf ins Hobby — Schaltungen, Löten, Basteln.",
-    images: [],
+    images: [
+      {
+        src: "/assets/images/PCB_TikTakToe.png",
+        alt: "PCB TikTakToe-Spiel",
+        caption: "PCB Tik Tak Toe",
+        width: 1774,
+        height: 887,
+      },
+      {
+        src: "/assets/images/PCB_TikTakToeLAyout.png",
+        alt: "PCB TikTakToe-Platinenlayout",
+        caption: "PCB Tik Tak Toe Layout",
+        width: 1011,
+        height: 841,
+      },
+    ],
   },
   {
     slug: "automobil",
