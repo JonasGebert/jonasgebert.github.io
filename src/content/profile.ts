@@ -13,7 +13,7 @@ export const profile = {
     {
       name: "Englisch",
       level:
-        "Fließend / verhandlungssicher durch die Arbeit in englischsprachiger Forschungsgruppe",
+        "Fließend durch die Arbeit in englischsprachiger Forschungsgruppe",
     },
   ],
   interests: ["Elektronik", "Automobil", "Motorrad", "3D-Druck"],
