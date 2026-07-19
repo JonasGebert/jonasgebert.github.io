@@ -96,13 +96,6 @@ export const hobbies: Hobby[] = [
     ],
   },
   {
-    slug: "kochen",
-    name: "Kochen",
-    icon: "kochen",
-    note: "Handwerk mit sofortigem Ergebnis — vom Rezept bis zum eigenen Experiment.",
-    images: [],
-  },
-  {
     slug: "tauchen",
     name: "Tauchen",
     icon: "diving",
