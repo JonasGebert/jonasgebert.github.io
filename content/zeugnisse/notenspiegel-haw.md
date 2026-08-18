@@ -4,7 +4,7 @@
 
 - Dokumenttyp: Leistungsübersicht (Notenspiegel)
 - Aussteller: Hochschule für Angewandte Wissenschaften Hamburg (HAW Hamburg)
-- Datum: 26.06.2026
+- Datum: 18.08.2026
 - Ort: Hamburg
 - Sprache: Deutsch
 - Seitenanzahl: 3
@@ -20,13 +20,13 @@ Matrikelnummer: [geschwärzt]
 Geburtsdatum: [geschwärzt]
 Geburtsort: [geschwärzt]
 
-**LEISTUNGSÜBERSICHT** – Hamburg, 26.06.2026
+**LEISTUNGSÜBERSICHT** – Hamburg, 18.08.2026
 
 Studiengang: Bachelor Maschinenbau und Produktion (Bachelor of Science)
 Prüfungsordnungsversion: 2020 SoSe
 
 Das Studium umfasst 210 CP.
-(Aktuelles) Fachsemester: 5 – Sommersemester 2026
+(Aktuelles) Fachsemester: 6 – Wintersemester 2026/2027
 
 Jonas Gebert hat folgende Prüfungen abgelegt:
 
@@ -38,11 +38,11 @@ Jonas Gebert hat folgende Prüfungen abgelegt:
 
 | Nr. | Bezeichnung | Datum | Bewertung | Status | CP | Art | Versuch | Ak |
 |---|---|---|---|---|---|---|---|---|
-| | **Gesamtkonto BA Maschinenbau und Produktion PSO 2020** | **03.03.2026** | **1,74** | **PV** | **116** | | | |
+| | **Gesamtkonto BA Maschinenbau und Produktion PSO 2020** | **28.07.2026** | **1,69** | **PV** | **159** | | | |
 | | **Semestergruppenwahl, Vorpraktikum und Studienfachberatung** | **19.04.2024** | | **BE** | | | | |
 | 1MP20-VP.SL-P | Vorpraktikum | 19.04.2024 | | BE | | SL | 1 | |
 | 1MP-SFB1.SL-P | Studienfachberatung im ersten Studienjahr | 15.04.2024 | | BE | | SB | 1 | |
-| | **Kernstudium** | **03.02.2026** | **2,06** | **PV** | **93** | | | |
+| | **Kernstudium** | **17.07.2026** | **1,96** | **BE** | **102** | | | |
 | **M-20010** | **Mathematik 1** | **11.07.2024** | **1,00** | **BE** | **8** | **M** | | |
 | 1MP-20011.PL | Mathematik 1 | 11.07.2024 | 1,00 | BE | 8 | PL | 1 | |
 | **M-20020** | **Mathematik 2** | **28.01.2025** | **0,70** | **BE** | **5** | **M** | | |
@@ -88,27 +88,44 @@ Jonas Gebert hat folgende Prüfungen abgelegt:
 | **M-20190** | **Elektrische Antriebstechnik** | **03.02.2026** | **2,30** | **BE** | **5** | **M** | | |
 | 1MP-20191.PL | Elektrische Antriebstechnik | 03.02.2026 | 2,30 | BE | 5 | PL | 1 | |
 | 1MP-20192.SL | Elektrische Antriebstechnik Laborpraktikum | | | BE | | SL | 1 | |
-| | **Kernstudium (unbenotete Module)** | **03.03.2026** | | **PV** | **3** | | | |
+| **M-20210** | **Mess-, Steuer- und Regelungstechnik** | **17.07.2026** | **1,00** | **BE** | **9** | **M** | | |
+| 1MP-20211.PL | Mess-, Steuer- und Regelungstechnik | 17.07.2026 | 1,00 | BE | 9 | PL | 1 | |
+| 1MP-20212.SL | Mess-, Steuer- und Regelungstechnik Laborpraktikum | | | BE | | SL | 1 | |
+| | **Kernstudium (unbenotete Module)** | **03.03.2026** | | **PV** | **7** | | | |
 | **M-20130** | **Praxisprojekt** | **20.01.2025** | | **BE** | **3** | **M** | | |
 | 1MP-20131.SL | Praxisprojekt - Einführungslabor | 23.09.2024 | | BE | 3 | SL | 1 | |
 | 1MP-20132.SL | Praxisprojekt - Lernprojekt | 20.01.2025 | | BE | | SL | 1 | |
-| **M-20200** | **Integrationsfächer** | **03.03.2026** | | **PV** | | **M** | | |
+| **M-20200** | **Integrationsfächer** | **03.03.2026** | | **BE** | **4** | **M** | | |
+| 1MP-IF-5115.SL | Recht 2 | | | BE | 2 | SL | 1 | |
 | 1MP-IF-5118.SL | Wissenschaftliches Schreiben | 03.03.2026 | | BE | 2 | SL | 1 | |
-| | **Studienrichtung Digital Engineering and Mobility** | **20.02.2026** | **1,25** | **PV** | **20** | | | |
+| | **Studienrichtung Digital Engineering and Mobility** | **27.07.2026** | **1,42** | **PV** | **35** | | | |
 | **M-20310** | **Methodische Produktentwicklung** | **20.02.2026** | **1,00** | **BE** | **5** | **M** | | |
 | 1MP-20311.PL | Methodische Produktentwicklung | 20.02.2026 | 1,00 | BE | 5 | PL | 1 | |
 | 1MP-20312.SL | Methodische Produktentwicklung Laborpraktikum | 20.02.2026 | | BE | | SL | 1 | |
 | **M-20320** | **Softwareanwendungen im Maschinenbau** | **29.01.2026** | **1,00** | **BE** | **5** | **M** | | |
 | 1MP-20321.PL | Softwareanwendungen im Maschinenbau | 20.01.2026 | 1,00 | BE | 5 | PL | 1 | |
 | 1MP-20322.SL | Softwareanwendungen im Maschinenbau Laborpraktikum | 29.01.2026 | | BE | | SL | 1 | |
+| **M-20330** | **Maschinelles Lernen und Datenanalyse** | | | **PV** | | **M** | | |
+| 1MP-20332.SL | Maschinelles Lernen und Datenanalyse Laborpraktikum | 09.07.2026 | | BE | | SL | 1 | |
 | **M-20340** | **Autonome mobile Systeme** | **06.02.2026** | **1,30** | **BE** | **5** | **M** | | |
 | 1MP-20341.PL | Autonome mobile Systeme | 06.02.2026 | 1,30 | BE | 5 | PL | 1 | |
 | 1MP-20342.SL | Autonome mobile Systeme Laborpraktikum | 06.02.2026 | | BE | | SL | 1 | |
-| | **Wahlpflichtmodule Studienrichtung Digital Engineering and Mobility** | **06.02.2026** | **1,70** | **PV** | **5** | | | |
-| | Austauschmodul | 06.02.2026 | 1,70 | PV | 5 | | | |
+| | **Wahlpflichtmodule Studienrichtung Digital Engineering and Mobility** | **27.07.2026** | **1,67** | **PV** | **20** | | | |
+| **M-20400** | **Urbane Mobilität und Elektromobilität** | **03.07.2026** | **1,30** | **BE** | **5** | **M** | | |
+| 1MP-20401.PL | Urbane Mobilität und Elektromobilität | 03.07.2026 | 1,30 | BE | 5 | PL | 1 | |
+| 1MP-20402.SL | Urbane Mobilität und Elektromobilität Laborpraktikum | | | BE | | SL | 1 | |
+| **M-20410** | **Fügetechnik** | **13.07.2026** | **2,00** | **BE** | **5** | **M** | | |
+| 1MP-20411.PL | Fügetechnik | 13.07.2026 | 2,00 | BE | 5 | PL | 1 | |
+| 1MP-20412.SL | Fügetechnik Laborpraktikum | | | BE | | SL | 1 | |
+| **M-20440** | **Roboterbasierte Fertigung** | **27.07.2026** | **1,70** | **BE** | **5** | **M** | | |
+| 1MP-20441.PL | Roboterbasierte Fertigung | 27.07.2026 | 1,70 | BE | 5 | PL | 1 | |
+| 1MP-20442.SL | Roboterbasierte Fertigung Laborpraktikum | | | BE | | SL | 1 | |
+| | **Austauschmodul** | **06.02.2026** | **1,70** | **PV** | **5** | | | |
 | **M-21030** | **Produktionsplanung und -steuerung** | **06.02.2026** | **1,70** | **BE** | **5** | **M** | | |
 | 1MP-21031.PL | Produktionsplanung und -steuerung | 06.02.2026 | 1,70 | BE | 5 | PL | 1 | |
 | 1MP-21032.SL | Produktionsplanung und -steuerung Laborpraktikum | 31.01.2026 | | BE | | SL | 1 | |
+| **M-HPR-P** | **Hauptpraktikum** | **28.07.2026** | | **BE** | **15** | **M** | | |
+| 1MP-21320.SL | Hauptpraktikum | 28.07.2026 | | BE | 15 | SL | 1 | |
 
 ---
 
@@ -134,13 +151,20 @@ Jonas Gebert hat folgende Prüfungen abgelegt:
 | M-20170 | Strömungslehre 1 | 3,30 | 3 |
 | M-20180 | Grundlagen Elektrotechnik | 3,70 | 4 |
 | M-20190 | Elektrische Antriebstechnik | 2,30 | 5 |
+| M-20210 | Mess-, Steuer- und Regelungstechnik | 1,00 | 9 |
 | M-20310 | Methodische Produktentwicklung | 1,00 | 5 |
 | M-20320 | Softwareanwendungen im Maschinenbau | 1,00 | 5 |
 | M-20340 | Autonome mobile Systeme | 1,30 | 5 |
+| M-20400 | Urbane Mobilität und Elektromobilität | 1,30 | 5 |
+| M-20410 | Fügetechnik | 2,00 | 5 |
+| M-20440 | Roboterbasierte Fertigung | 1,70 | 5 |
 | M-21030 | Produktionsplanung und -steuerung | 1,70 | 5 |
-| | **Kernstudium Gesamtnote** | **2,06** | **93** |
-| | **Studienrichtung Gesamtnote** | **1,25** | **20** |
-| | **Gesamtkonto** | **1,74** | **116** |
+| | **Kernstudium Gesamtnote** | **1,96** | **102** |
+| | **Studienrichtung Gesamtnote** | **1,42** | **35** |
+| | **Wahlpflichtmodule Studienrichtung** | **1,67** | **20** |
+| | **Gesamtkonto** | **1,69** | **159** |
+
+Unbenotet bestanden: Vorpraktikum, Studienfachberatung, Praxisprojekt (3 CP), Integrationsfächer (Recht 2, Wissenschaftliches Schreiben — 4 CP), Hauptpraktikum (15 CP).
 
 ---
 
@@ -212,4 +236,4 @@ Leistungen aus dem Zusatzkonto fließen nicht in die Gesamtberechnung ein.
 - I = inländische Hochschule
 - O = bestanden ohne Note
 
-HAW Hamburg – Stand: 26.06.2026 – Matrikelnummer: [geschwärzt]
+HAW Hamburg – Stand: 18.08.2026 – Matrikelnummer: [geschwärzt]

@@ -1,10 +1,10 @@
-/** Uni-Noten — Quelle: content/zeugnisse/notenspiegel-haw.md (Stand 26.06.2026) */
+/** Uni-Noten — Quelle: content/zeugnisse/notenspiegel-haw.md (Stand 18.08.2026) */
 export type Module = { nr: string; name: string; grade: number; cp: number; area: "Kernstudium" | "Studienrichtung" };
 
 export const gradeSummary = {
-  gesamt: { label: "Gesamtkonto", grade: 1.74, cp: 116, of: 210 },
-  kern: { label: "Kernstudium", grade: 2.06, cp: 93 },
-  richtung: { label: "Studienrichtung Digital Engineering and Mobility", grade: 1.25, cp: 20 },
+  gesamt: { label: "Gesamtkonto", grade: 1.69, cp: 159, of: 210 },
+  kern: { label: "Kernstudium", grade: 1.96, cp: 102 },
+  richtung: { label: "Studienrichtung Digital Engineering and Mobility", grade: 1.42, cp: 35 },
 } as const;
 
 export const modules: Module[] = [
@@ -26,9 +26,13 @@ export const modules: Module[] = [
   { nr: "M-20170", name: "Strömungslehre 1", grade: 3.3, cp: 3, area: "Kernstudium" },
   { nr: "M-20180", name: "Grundlagen Elektrotechnik", grade: 3.7, cp: 4, area: "Kernstudium" },
   { nr: "M-20190", name: "Elektrische Antriebstechnik", grade: 2.3, cp: 5, area: "Kernstudium" },
+  { nr: "M-20210", name: "Mess-, Steuer- und Regelungstechnik", grade: 1.0, cp: 9, area: "Kernstudium" },
   { nr: "M-20310", name: "Methodische Produktentwicklung", grade: 1.0, cp: 5, area: "Studienrichtung" },
   { nr: "M-20320", name: "Softwareanwendungen im Maschinenbau", grade: 1.0, cp: 5, area: "Studienrichtung" },
   { nr: "M-20340", name: "Autonome mobile Systeme", grade: 1.3, cp: 5, area: "Studienrichtung" },
+  { nr: "M-20400", name: "Urbane Mobilität und Elektromobilität", grade: 1.3, cp: 5, area: "Studienrichtung" },
+  { nr: "M-20410", name: "Fügetechnik", grade: 2.0, cp: 5, area: "Studienrichtung" },
+  { nr: "M-20440", name: "Roboterbasierte Fertigung", grade: 1.7, cp: 5, area: "Studienrichtung" },
   { nr: "M-21030", name: "Produktionsplanung und -steuerung", grade: 1.7, cp: 5, area: "Studienrichtung" },
 ];
 

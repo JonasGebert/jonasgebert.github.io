@@ -4,7 +4,7 @@ export const profile = {
   fullName: "Jonas Gebert",
   role: "Mechatroniker · Maschinenbau-Student",
   tagline:
-    "Mechatroniker (IHK, Note 1,0) und Maschinenbau-Student (HAW Hamburg, 5. Semester, Ø 1,74) mit praktischer Erfahrung in Hochpräzisionsfertigung, Elektronik und Systemintegration aus der Grundlagenforschung.",
+    "Mechatroniker (IHK, Note 1,0) und Maschinenbau-Student (HAW Hamburg, 6. Semester, Ø 1,69) mit praktischer Erfahrung in Hochpräzisionsfertigung, Elektronik und Systemintegration aus der Grundlagenforschung.",
   github: "https://github.com/JonasGebert",
   linkedin: "https://www.linkedin.com/in/jonas-gebert-0a8482382/",
   location: "Hamburg",

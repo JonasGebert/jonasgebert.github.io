@@ -4,10 +4,10 @@
 
 - Dokumenttyp: Notenkonto (Sortierung: Prüfungssemester absteigend)
 - Aussteller: HAW Hamburg (Hochschule für Angewandte Wissenschaften Hamburg)
-- Datum: 26.06.2026
+- Datum: 18.08.2026
 - Ort: Hamburg
 - Sprache: Deutsch
-- Seitenanzahl: 2
+- Seitenanzahl: 3
 - Website: http://www.haw-hamburg.de
 
 ---
@@ -15,17 +15,28 @@
 ## Vollständiger Inhalt
 
 **Gebert, Jonas**
-geboren am: [geschwärzt]
+geboren am: [geschwärzt] in [geschwärzt]
 Matrikelnummer: [geschwärzt]
 
 ---
 
 ## Tabellen
 
-### Seite 1 – WiSe 25 und SoSe 25
+### Seite 1 – SoSe 26 und WiSe 25
 
 | Semester | Prüfungsdatum | Prüfungsbezeichnung (Elementnr.) | Note/Status | Art | empf.FS | Versuch | Notenfreigabe | anerkannt* |
 |---|---|---|---|---|---|---|---|---|
+| SoSe 26 | 13.07.2026 | Fügetechnik (1MP-20411.PL) | 2,00 BE | PL | 6 | 1 | 27.07.2026 | |
+| SoSe 26 | | Fügetechnik Laborpraktikum (1MP-20412.SL) | BE | SL | 6 | 1 | 27.07.2026 | |
+| SoSe 26 | 28.07.2026 | Hauptpraktikum (1MP-21320.SL) | BE | SL | 7 | 1 | 28.07.2026 | |
+| SoSe 26 | 09.07.2026 | Maschinelles Lernen und Datenanalyse Laborpraktikum (1MP-20332.SL) | BE | SL | 4 | 1 | 13.07.2026 | |
+| SoSe 26 | 17.07.2026 | Mess-, Steuer- und Regelungstechnik (1MP-20211.PL) | 1,00 BE | PL | 6 | 1 | 14.08.2026 | |
+| SoSe 26 | | Mess-, Steuer- und Regelungstechnik Laborpraktikum (1MP-20212.SL) | BE | SL | 6 | 1 | 03.08.2026 | |
+| SoSe 26 | | Recht 2 (1MP-IF-5115.SL) | BE | SL | 4 | 1 | 11.08.2026 | |
+| SoSe 26 | 27.07.2026 | Roboterbasierte Fertigung (1MP-20441.PL) | 1,70 BE | PL | 6 | 1 | 27.07.2026 | |
+| SoSe 26 | | Roboterbasierte Fertigung Laborpraktikum (1MP-20442.SL) | BE | SL | 6 | 1 | 27.07.2026 | |
+| SoSe 26 | 03.07.2026 | Urbane Mobilität und Elektromobilität (1MP-20401.PL) | 1,30 BE | PL | 6 | 1 | 14.07.2026 | |
+| SoSe 26 | | Urbane Mobilität und Elektromobilität Laborpraktikum (1MP-20402.SL) | BE | SL | 6 | 1 | 14.07.2026 | |
 | WiSe 25 | 06.02.2026 | Autonome mobile Systeme (1MP-20341.PL) | 1,30 BE | PL | 4 | 1 | 27.02.2026 | |
 | WiSe 25 | 06.02.2026 | Autonome mobile Systeme Laborpraktikum (1MP-20342.SL) | BE | SL | 4 | 1 | 27.02.2026 | |
 | WiSe 25 | 03.02.2026 | Elektrische Antriebstechnik (1MP-20191.PL) | 2,30 BE | PL | 4 | 1 | 16.03.2026 | |
@@ -35,6 +46,11 @@ Matrikelnummer: [geschwärzt]
 | WiSe 25 | 06.02.2026 | Produktionsplanung und -steuerung (1MP-21031.PL) | 1,70 BE | PL | 4 | 1 | 11.02.2026 | |
 | WiSe 25 | 31.01.2026 | Produktionsplanung und -steuerung Laborpraktikum (1MP-21032.SL) | BE | SL | 4 | 1 | 12.02.2026 | |
 | WiSe 25 | 20.01.2026 | Softwareanwendungen im Maschinenbau (1MP-20321.PL) | 1,00 BE | PL | 4 | 1 | 23.01.2026 | |
+
+### Seite 2 – WiSe 25, SoSe 25 und WiSe 24
+
+| Semester | Prüfungsdatum | Prüfungsbezeichnung (Elementnr.) | Note/Status | Art | empf.FS | Versuch | Notenfreigabe | anerkannt* |
+|---|---|---|---|---|---|---|---|---|
 | WiSe 25 | 29.01.2026 | Softwareanwendungen im Maschinenbau Laborpraktikum (1MP-20322.SL) | BE | SL | 4 | 1 | 29.01.2026 | |
 | WiSe 25 | 03.03.2026 | Wissenschaftliches Schreiben (1MP-IF-5118.SL) | BE | SL | 4 | 1 | 03.03.2026 | |
 | SoSe 25 | 21.07.2025 | Angewandte Informatik (1MP-20151.PL) | 1,00 BE | PL | 3 | 1 | 11.08.2025 | |
@@ -48,11 +64,6 @@ Matrikelnummer: [geschwärzt]
 | SoSe 25 | 12.06.2025 | Studienrichtung Digital Engineering and Mobility (1MP-SRW-P.LV1) | BE | LV | 3 | 1 | 09.10.2025 | |
 | SoSe 25 | 28.07.2025 | Technische Mechanik 3 (1MP-20051.PL) | 2,30 BE | PL | 3 | 1 | 19.08.2025 | |
 | SoSe 25 | 16.07.2025 | Technische Thermodynamik 1 (1MP-20161.PL) | 3,30 BE | PL | 3 | 1 | 03.08.2025 | |
-
-### Seite 2 – WiSe 24 und SoSe 24
-
-| Semester | Prüfungsdatum | Prüfungsbezeichnung (Elementnr.) | Note/Status | Art | empf.FS | Versuch | Notenfreigabe | anerkannt* |
-|---|---|---|---|---|---|---|---|---|
 | WiSe 24 | | Experimentalphysik Laborpraktikum (1MP-20082.SL) | BE | SL | 1 | 1 | 27.03.2025 | |
 | WiSe 24 | 11.02.2025 | Fertigungstechnik (1MP-20141.PL) | 1,00 BE | PL | 2 | 1 | 17.02.2025 | |
 | WiSe 24 | 14.02.2025 | Konstruktion A (1MP-20101.PL) | 3,00 BE | PL | 2 | 1 | 13.03.2025 | |
@@ -63,6 +74,11 @@ Matrikelnummer: [geschwärzt]
 | WiSe 24 | 04.02.2025 | Technische Mechanik 2 (1MP-20041.PL) | 1,00 BE | PL | 2 | 1 | 04.02.2025 | |
 | WiSe 24 | 31.01.2025 | Werkstoffkunde (1MP-20121.PL) | 2,70 BE | PL | 2 | 1 | 18.02.2025 | |
 | WiSe 24 | 29.01.2025 | Werkstoffkunde Laborpraktikum (1MP-20122.SL) | BE | SL | 2 | 1 | 18.02.2025 | |
+
+### Seite 3 – SoSe 24
+
+| Semester | Prüfungsdatum | Prüfungsbezeichnung (Elementnr.) | Note/Status | Art | empf.FS | Versuch | Notenfreigabe | anerkannt* |
+|---|---|---|---|---|---|---|---|---|
 | SoSe 24 | 25.07.2024 | Experimentalphysik (1MP-20081.PL) | 4,00 BE | PL | 1 | 1 | 25.09.2024 | |
 | SoSe 24 | 08.07.2024 | Industriebetriebslehre (1MP-20061.PL) | 1,70 BE | PL | 1 | 1 | 05.08.2024 | |
 | SoSe 24 | 15.07.2024 | Maschinenzeichnen und CAD (1MP-20091.PL) | 1,70 BE | PL | 1 | 1 | 07.08.2024 | |
@@ -81,6 +97,10 @@ Matrikelnummer: [geschwärzt]
 
 | Semester | Prüfungsbezeichnung | Note |
 |---|---|---|
+| SoSe 26 | Fügetechnik | 2,00 |
+| SoSe 26 | Mess-, Steuer- und Regelungstechnik | 1,00 |
+| SoSe 26 | Roboterbasierte Fertigung | 1,70 |
+| SoSe 26 | Urbane Mobilität und Elektromobilität | 1,30 |
 | WiSe 25 | Autonome mobile Systeme | 1,30 |
 | WiSe 25 | Elektrische Antriebstechnik | 2,30 |
 | WiSe 25 | Methodische Produktentwicklung | 1,00 |
@@ -104,6 +124,8 @@ Matrikelnummer: [geschwärzt]
 | SoSe 24 | Mathematik 1 | 1,00 |
 | SoSe 24 | Technische Mechanik 1 | 1,70 |
 
+Alle Prüfungen im Erstversuch (Versuch 1) bestanden.
+
 ---
 
 ## Bemerkungen
@@ -115,4 +137,4 @@ empf.FS = Empfohlenes Fachsemester; pt = Punkte; Art: PL=Prüfungsleistung, SL=S
 Die Daten sind sorgfältig zu prüfen. Ab Wintersemester 2024/25 wird das Notenfreigabedatum flächendeckend gespeichert.
 Bei fehlerhaften bzw. fehlenden Eintragungen wenden Sie sich bitte umgehend an das Fakultätsservicebüro.
 
-HAW Hamburg – Stand: 26.06.2026
+HAW Hamburg – Stand: 18.08.2026

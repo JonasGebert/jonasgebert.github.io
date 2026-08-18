@@ -72,12 +72,12 @@ export const timeline: TimelineItem[] = [
     title: "B.Sc. Maschinenbau und Produktion",
     org: "HAW Hamburg, Berliner Tor",
     kind: "Studium",
-    highlight: "Aktueller Schnitt: 1,74 · 5. Semester",
+    highlight: "Aktueller Schnitt: 1,69 · 6. Semester",
     description:
-      "Schwerpunkt: Digitale Produktion, Studienrichtung Digital Engineering and Mobility (Schnitt 1,25). 116 von 210 CP abgeschlossen.",
+      "Schwerpunkt: Digitale Produktion, Studienrichtung Digital Engineering and Mobility (Schnitt 1,42). 159 von 210 CP abgeschlossen, Hauptpraktikum absolviert.",
     bullets: [
-      "Bestleistungen: Mathematik 2 (0,7), Mathematik 1 / Fertigungstechnik / Angewandte Informatik / Methodische Produktentwicklung / Softwareanwendungen im Maschinenbau (je 1,0)",
-      "Studienrichtung: Autonome mobile Systeme (1,3), Produktionsplanung und -steuerung (1,7)",
+      "Bestleistungen: Mathematik 2 (0,7), Mathematik 1 / Fertigungstechnik / Angewandte Informatik / Methodische Produktentwicklung / Softwareanwendungen im Maschinenbau / Mess-, Steuer- und Regelungstechnik (je 1,0)",
+      "Studienrichtung: Autonome mobile Systeme (1,3), Urbane Mobilität und Elektromobilität (1,3), Produktionsplanung und -steuerung (1,7), Roboterbasierte Fertigung (1,7), Fügetechnik (2,0)",
     ],
     zeugnisSlugs: ["notenspiegel-haw", "notenkonto-haw"],
   },
