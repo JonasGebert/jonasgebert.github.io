@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { profile } from "@/content/profile";
+import { gradeSummary } from "@/content/grades";
+import { formatGrade } from "@/lib/format";
 import { Icon } from "./Icon";
 
 export function Hero() {
@@ -48,7 +50,8 @@ export function Hero() {
               <Icon name="award" className="h-4 w-4 text-cyan-400" /> IHK-Abschluss 1,0
             </span>
             <span className="flex items-center gap-2">
-              <Icon name="chart" className="h-4 w-4 text-cyan-400" /> Studium Ø 1,74
+              <Icon name="chart" className="h-4 w-4 text-cyan-400" /> Studium Ø{" "}
+              {formatGrade(gradeSummary.gesamt.grade)}
             </span>
             <span className="flex items-center gap-2">
               <Icon name="cpu" className="h-4 w-4 text-cyan-400" /> 4 Jahre DESY

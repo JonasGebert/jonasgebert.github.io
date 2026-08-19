@@ -1,4 +1,6 @@
 import { profile } from "@/content/profile";
+import { gradeSummary, studium } from "@/content/grades";
+import { formatGrade } from "@/lib/format";
 import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
 
@@ -14,8 +16,9 @@ export function About() {
             Mechatroniker (IHK-Abschluss mit Note 1,0), dann als Mechatroniker in der
             Detektorentwicklung der Gruppe FS-DS. Hochpräzisionsfertigung, Elektronik und
             Systemintegration in einer internationalen, englischsprachigen Forschungsumgebung.
-            Seit April 2024 studiere ich Maschinenbau und Produktion an der HAW Hamburg
-            (Schwerpunkt Digitale Produktion) — aktuell im 5. Semester mit einem Schnitt von 1,74.
+            Seit April 2024 studiere ich {studium.studiengang} an der {studium.hochschule}{" "}
+            (Schwerpunkt {studium.schwerpunkt}) — aktuell im {studium.semester}. Semester mit einem
+            Schnitt von {formatGrade(gradeSummary.gesamt.grade)}.
           </p>
         </Reveal>
         <Reveal className="card p-7">

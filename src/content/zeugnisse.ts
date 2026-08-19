@@ -1,4 +1,10 @@
-/** Zeugnis-Metadaten — verknüpft Markdown-Detailseiten mit PDF-Downloads */
+/**
+ * Zeugnis-Metadaten — verknüpft Markdown-Detailseiten mit PDF-Downloads.
+ * Studien-Zahlen und der Datumsstand der HAW-Dokumente kommen aus grades.ts.
+ */
+import { gradeSummary, studium } from "./grades";
+import { formatGrade } from "@/lib/format";
+
 export type Zeugnis = {
   slug: string;
   title: string;
@@ -49,17 +55,17 @@ export const zeugnisse: Zeugnis[] = [
   {
     slug: "notenspiegel-haw",
     title: "Leistungsübersicht HAW Hamburg",
-    issuer: "HAW Hamburg",
-    date: "18.08.2026",
+    issuer: studium.hochschule,
+    date: studium.stand,
     category: "Studium",
-    highlight: "Gesamtkonto 1,69 · 159 von 210 CP",
+    highlight: `Gesamtkonto ${formatGrade(gradeSummary.gesamt.grade)} · ${gradeSummary.gesamt.cp} von ${gradeSummary.gesamt.of} CP`,
     pdf: "/documents/Notenspiegel_HAW.pdf",
   },
   {
     slug: "notenkonto-haw",
     title: "Notenkonto HAW Hamburg",
-    issuer: "HAW Hamburg",
-    date: "18.08.2026",
+    issuer: studium.hochschule,
+    date: studium.stand,
     category: "Studium",
     highlight: "Alle Prüfungen im Erstversuch bestanden",
     pdf: "/documents/Notenkonto_HAW.pdf",

@@ -1,5 +1,22 @@
-/** Uni-Noten — Quelle: content/zeugnisse/notenspiegel-haw.md (Stand 18.08.2026) */
+/**
+ * Uni-Noten — SINGLE SOURCE OF TRUTH für alle Zahlen rund ums Studium.
+ * Quelle: content/zeugnisse/notenspiegel-haw.md
+ *
+ * WICHTIG: Bei neuen Noten NUR diese Datei anfassen (studium.stand,
+ * studium.semester, gradeSummary, modules). Alles andere — Hero, About,
+ * Timeline, Profil-Tagline, Zeugnis-Highlights — leitet sich hieraus ab.
+ */
 export type Module = { nr: string; name: string; grade: number; cp: number; area: "Kernstudium" | "Studienrichtung" };
+
+/** Studienstand — Semester und Datumsstand des Notenspiegels. */
+export const studium = {
+  hochschule: "HAW Hamburg",
+  studiengang: "Maschinenbau und Produktion",
+  schwerpunkt: "Digitale Produktion",
+  semester: 6,
+  /** Ausstellungsdatum des zugrunde liegenden Notenspiegels (dd.mm.yyyy). */
+  stand: "18.08.2026",
+} as const;
 
 export const gradeSummary = {
   gesamt: { label: "Gesamtkonto", grade: 1.69, cp: 159, of: 210 },

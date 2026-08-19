@@ -1,4 +1,5 @@
-import { gradeSummary, ihkResults, modules } from "@/content/grades";
+import { gradeSummary, ihkResults, modules, studium } from "@/content/grades";
+import { formatGrade } from "@/lib/format";
 import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
 
@@ -21,14 +22,14 @@ export function Grades() {
       <SectionHeading
         kicker="Noten"
         title="Leistungen im Detail"
-        intro="Alle Modulnoten des Studiums (HAW Hamburg, Stand 26.06.2026) und das IHK-Prüfungsergebnis — vollständig und im Erstversuch."
+        intro={`Alle Modulnoten des Studiums (${studium.hochschule}, Stand ${studium.stand}) und das IHK-Prüfungsergebnis — vollständig und im Erstversuch.`}
       />
 
       {/* Summary Cards */}
       <div className="mb-12 grid gap-4 sm:grid-cols-3">
         {[gradeSummary.gesamt, gradeSummary.kern, gradeSummary.richtung].map((s) => (
           <Reveal key={s.label} className="card p-6 text-center">
-            <p className="text-4xl font-bold accent-text">{s.grade.toFixed(2).replace(".", ",")}</p>
+            <p className="text-4xl font-bold accent-text">{formatGrade(s.grade)}</p>
             <p className="mt-2 text-sm font-medium text-slate-300">{s.label}</p>
             <p className="mt-1 text-xs text-slate-500">
               {"of" in s ? `${s.cp} von ${(s as { of: number }).of} CP` : `${s.cp} CP`}
@@ -52,7 +53,7 @@ export function Grades() {
                     <div className="mb-1 flex items-baseline justify-between gap-4 text-sm">
                       <span className="text-slate-300">{m.name}</span>
                       <span className={`font-semibold tabular-nums ${gradeColor(m.grade)}`}>
-                        {m.grade.toFixed(1).replace(".", ",")}
+                        {formatGrade(m.grade, 1)}
                         <span className="ml-2 text-xs font-normal text-slate-600">{m.cp} CP</span>
                       </span>
                     </div>

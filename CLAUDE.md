@@ -29,7 +29,18 @@ Es gibt keine Tests und keinen Lint-Task. `npm run build` ist die einzige Verifi
 Der gesamte Inhalt der Seite ist von den Komponenten getrennt. Es gibt zwei Quellen, die zusammenspielen:
 
 1. **`src/content/*.ts`** — typisierte Datenmodule (profile, timeline, grades, skills, zeugnisse, extras). Sie steuern, WAS auf der Hauptseite erscheint. Komponenten importieren diese Module und rendern sie; für reine Inhaltsänderungen müssen Komponenten fast nie angefasst werden.
-2. **`content/*.md`** — Markdown-Langtexte (about-me, Ziel, zeugnisse/*.md). Werden zur **Build-Zeit** über `src/lib/markdown.ts` (`marked`) zu HTML gerendert und via `dangerouslySetInnerHTML` mit der Klasse `prose-doc` ausgegeben.
+2. **`content/*.md`** — Markdown-Langtexte (Ziel, zeugnisse/*.md). Werden zur **Build-Zeit** über `src/lib/markdown.ts` (`marked`) zu HTML gerendert und via `dangerouslySetInnerHTML` mit der Klasse `prose-doc` ausgegeben.
+
+### Studien-Zahlen: `src/content/grades.ts` ist die einzige Quelle
+
+Schnitt, CP, Semester, Datumsstand und Modulnoten stehen **ausschließlich** in `src/content/grades.ts` (`studium` + `gradeSummary` + `modules`). Alles andere leitet sich per Import daraus ab:
+
+- `profile.ts` (Tagline), `timeline.ts` (HAW-Station inkl. Bestleistungen-Bullets), `zeugnisse.ts` (HAW-Highlights + Datum)
+- `Hero.tsx`, `About.tsx`, `Grades.tsx`
+
+Deutsche Notenformatierung läuft über `formatGrade()` aus `src/lib/format.ts` — nie `.toFixed().replace(".", ",")` neu schreiben.
+
+**Neue Noten eintragen = nur `grades.ts` ändern.** Wird eine Zahl irgendwo als Literal in Prosa geschrieben, läuft sie beim nächsten Notenspiegel auseinander — genau das ist schon einmal passiert (Hero und About standen monatelang auf einem alten Schnitt).
 
 ### Zeugnis-System (Dreiklang — muss synchron bleiben)
 
@@ -64,3 +75,5 @@ Personenbezogene Daten — Adresse, Geburtsdatum, Matrikelnummer, private E-Mail
 ## Datenquelle
 
 Die inhaltliche Quelle der Website ist der übergeordnete Ordner `AboutMe/` (lokal, nicht Teil des Repos): `about-me.md` ist der Master-Lebenslauf, die Original-PDFs liegen in den Zeugnis-Ordnern. Bei Widersprüchen zwischen Website-Content und `about-me.md` gilt `about-me.md`.
+
+Im Repo liegt **bewusst keine Kopie** von `about-me.md`. Es gab eine (`content/about-me.md`), sie wurde von keiner Komponente importiert und war veraltet — Kopien nicht wieder anlegen.

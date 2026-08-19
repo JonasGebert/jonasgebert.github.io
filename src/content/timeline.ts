@@ -1,4 +1,24 @@
-/** Lebenslauf-Stationen — Quellen: about-me.md + Zeugnis-Markdown-Dateien */
+/**
+ * Lebenslauf-Stationen — Quellen: ../../about-me.md + Zeugnis-Markdown-Dateien.
+ * Studien-Zahlen (Schnitt, CP, Semester, Modulnoten) kommen aus grades.ts.
+ */
+import { gradeSummary, modules, studium } from "./grades";
+import { formatGrade } from "@/lib/format";
+
+/** Module mit Bestnote (≤ 1,0), aufsteigend — für den Bestleistungen-Bullet. */
+const bestleistungen = modules
+  .filter((m) => m.grade <= 1.0)
+  .sort((a, b) => a.grade - b.grade)
+  .map((m) => `${m.name} (${formatGrade(m.grade, 1)})`)
+  .join(", ");
+
+/** Module der Studienrichtung ohne die bereits oben genannten Bestnoten. */
+const studienrichtungsmodule = modules
+  .filter((m) => m.area === "Studienrichtung" && m.grade > 1.0)
+  .sort((a, b) => a.grade - b.grade)
+  .map((m) => `${m.name} (${formatGrade(m.grade, 1)})`)
+  .join(", ");
+
 export type TimelineItem = {
   id: string;
   period: string;
@@ -72,12 +92,11 @@ export const timeline: TimelineItem[] = [
     title: "B.Sc. Maschinenbau und Produktion",
     org: "HAW Hamburg, Berliner Tor",
     kind: "Studium",
-    highlight: "Aktueller Schnitt: 1,69 · 6. Semester",
-    description:
-      "Schwerpunkt: Digitale Produktion, Studienrichtung Digital Engineering and Mobility (Schnitt 1,42). 159 von 210 CP abgeschlossen, Hauptpraktikum absolviert.",
+    highlight: `Aktueller Schnitt: ${formatGrade(gradeSummary.gesamt.grade)} · ${studium.semester}. Semester`,
+    description: `Schwerpunkt: ${studium.schwerpunkt}, ${gradeSummary.richtung.label} (Schnitt ${formatGrade(gradeSummary.richtung.grade)}). ${gradeSummary.gesamt.cp} von ${gradeSummary.gesamt.of} CP abgeschlossen, Hauptpraktikum absolviert.`,
     bullets: [
-      "Bestleistungen: Mathematik 2 (0,7), Mathematik 1 / Fertigungstechnik / Angewandte Informatik / Methodische Produktentwicklung / Softwareanwendungen im Maschinenbau / Mess-, Steuer- und Regelungstechnik (je 1,0)",
-      "Studienrichtung: Autonome mobile Systeme (1,3), Urbane Mobilität und Elektromobilität (1,3), Produktionsplanung und -steuerung (1,7), Roboterbasierte Fertigung (1,7), Fügetechnik (2,0)",
+      `Bestleistungen: ${bestleistungen}`,
+      `Studienrichtung: ${studienrichtungsmodule}`,
     ],
     zeugnisSlugs: ["notenspiegel-haw", "notenkonto-haw"],
   },
