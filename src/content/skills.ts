@@ -2,8 +2,10 @@
  * Technische Kenntnisse — Quelle: about-me.md (Tabelle „Technische Kenntnisse“).
  * `level` ist eine visuelle Einordnung (0–100) mit textlichem Beleg statt erfundener Prozentwerte.
  */
+import type { IconName } from "@/components/Icon";
+
 export type Skill = { name: string; level: number; evidence: string };
-export type SkillGroup = { title: string; icon: string; skills: Skill[] };
+export type SkillGroup = { title: string; icon: IconName; skills: Skill[] };
 
 export const skillGroups: SkillGroup[] = [
   {
@@ -53,7 +55,7 @@ export const skillGroups: SkillGroup[] = [
  * Soft Skills — jeder Punkt ist durch ein Zeugnis-Zitat oder einen dokumentierten Fakt belegt.
  * Quellen: Arbeitszeugnis FS-DS (2024), Ausbildungszeugnis DESY (2023), Berufsschulzeugnis (2023).
  */
-export type SoftSkill = { name: string; icon: string; evidence: string; source: string };
+export type SoftSkill = { name: string; icon: IconName; evidence: string; source: string };
 
 export const softSkills: SoftSkill[] = [
   {

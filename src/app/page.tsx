@@ -4,12 +4,12 @@ import { About } from "@/components/About";
 import { Timeline } from "@/components/Timeline";
 import { Grades } from "@/components/Grades";
 import { Skills } from "@/components/Skills";
-import { Certificates } from "@/components/Certificates";
-import { Certifications } from "@/components/Certifications";
+import { CertificateSection } from "@/components/CertificateSection";
 import { Hobbies } from "@/components/Hobbies";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { TravelGallery } from "@/components/TravelGallery";
+import { zeugnisse, zertifikate } from "@/content/zeugnisse";
 
 export default function Home() {
   return (
@@ -27,8 +27,22 @@ export default function Home() {
         <Timeline />
         <Grades />
         <Skills />
-        <Certificates />
-        <Certifications />
+        <CertificateSection
+          id="zeugnisse"
+          items={zeugnisse}
+          icon="award"
+          kicker="Zeugnisse"
+          title="Nachweise im Original"
+          intro="Alle Zeugnisse als vollständige Web-Version und als PDF-Download."
+        />
+        <CertificateSection
+          id="zertifikate"
+          items={zertifikate}
+          icon="file"
+          kicker="Zertifikate"
+          title="Zertifikate & Bescheinigungen"
+          intro="Zusatzqualifikationen aus Lehrgängen und Seminaren — jeweils als Web-Version und PDF."
+        />
         <TravelGallery />
         <Hobbies />
         <Contact />

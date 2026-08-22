@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Icon } from "./Icon";
+import { Icon, type IconName } from "./Icon";
 
-const items = [
+const items: { id: string; label: string; icon: IconName }[] = [
   { id: "home", label: "Home", icon: "home" },
   { id: "ueber-mich", label: "Über mich", icon: "user" },
   { id: "lebenslauf", label: "Lebenslauf", icon: "briefcase" },

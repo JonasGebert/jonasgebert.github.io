@@ -1,22 +1,38 @@
 import Link from "next/link";
-import { zertifikate } from "@/content/zeugnisse";
+import type { Zeugnis } from "@/content/zeugnisse";
+import type { IconName } from "./Icon";
 import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
 import { Icon } from "./Icon";
 
-export function Certifications() {
+/**
+ * Karten-Grid für Zeugnisse und Zertifikate — beide Sektionen sind bis auf
+ * Datenquelle, Icon, Anker-ID und Texte identisch. Die Anker-IDs (#zeugnisse,
+ * #zertifikate) sind Sidebar-Ziele und dürfen sich nicht ändern.
+ */
+export function CertificateSection({
+  id,
+  items,
+  icon,
+  kicker,
+  title,
+  intro,
+}: {
+  id: string;
+  items: Zeugnis[];
+  icon: IconName;
+  kicker: string;
+  title: string;
+  intro: string;
+}) {
   return (
-    <section id="zertifikate" className="mx-auto max-w-6xl px-6 py-24">
-      <SectionHeading
-        kicker="Zertifikate"
-        title="Zertifikate & Bescheinigungen"
-        intro="Zusatzqualifikationen aus Lehrgängen und Seminaren — jeweils als Web-Version und PDF."
-      />
+    <section id={id} className="mx-auto max-w-6xl px-6 py-24">
+      <SectionHeading kicker={kicker} title={title} intro={intro} />
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {zertifikate.map((z) => (
+        {items.map((z) => (
           <Reveal key={z.slug} className="card flex flex-col p-6">
             <p className="mb-3 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-cyan-400">
-              <Icon name="file" className="h-4 w-4" /> {z.category}
+              <Icon name={icon} className="h-4 w-4" /> {z.category}
             </p>
             <h3 className="text-lg font-semibold leading-snug text-slate-100">{z.title}</h3>
             <p className="mt-1 text-sm text-slate-500">

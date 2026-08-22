@@ -4,8 +4,10 @@
  * Bilder hinzufügen: Datei in public/assets/images/ legen und hier im images-Array eintragen.
  * Solange images leer ist, zeigt die Unterseite Platzhalter.
  */
+import type { IconName } from "@/components/Icon";
+
 export type HobbyImage = { src: string; alt: string; caption?: string; width: number; height: number };
-export type Hobby = { slug: string; name: string; icon: string; note: string; images: HobbyImage[] };
+export type Hobby = { slug: string; name: string; icon: IconName; note: string; images: HobbyImage[] };
 
 export const hobbies: Hobby[] = [
   {
