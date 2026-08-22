@@ -15,13 +15,13 @@ export default function Home() {
   return (
     <>
       <a
-        href="#home"
+        href="#main"
         className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded-lg focus:bg-cyan-400 focus:px-4 focus:py-2 focus:text-slate-950"
       >
         Zum Inhalt springen
       </a>
       <Sidebar />
-      <main id="main">
+      <main id="main" tabIndex={-1}>
         <Hero />
         <About />
         <Timeline />

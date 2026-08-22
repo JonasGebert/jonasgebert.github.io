@@ -3,6 +3,10 @@ name: Deploy Portfolio zu GitHub Pages
 on:
   push:
     branches: [main]
+  # Monatlicher Neubau: der statische Export friert das Copyright-Jahr im Footer
+  # ein (new Date() läuft nur zur Build-Zeit) — einmal im Monat frisch bauen.
+  schedule:
+    - cron: "0 4 1 * *"
   workflow_dispatch:
 
 permissions:
