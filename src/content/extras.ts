@@ -201,6 +201,7 @@ export const hobbies: Hobby[] = [
 /**
  * Reise-Galerie: Bild in public/assets/images/ ablegen und hier eine Zeile ergänzen.
  * width/height = echte Pixelmaße des Bildes (verhindert Layout-Springen beim Laden).
+ * Reihenfolge = Aufnahmedatum absteigend (neueste Reise zuerst). Neue Bilder oben einsortieren.
  */
 export type TravelPhoto = { src: string; alt: string; caption: string; width: number; height: number };
 
@@ -220,11 +221,11 @@ export const travelPhotos: TravelPhoto[] = [
     height: 1364,
   },
   {
-    src: "/assets/images/London_towerbridge_2023.webp",
-    alt: "London, Tower Bridge, 2023",
-    caption: "London 2023 — Tower Bridge",
-    width: 1524,
-    height: 704,
+    src: "/assets/images/Danzig.webp",
+    alt: "Danzig, 2025",
+    caption: "Danzig 2025",
+    width: 1364,
+    height: 768,
   },
   {
     src: "/assets/images/Quadtour_Djerba_2023.webp",
@@ -234,32 +235,11 @@ export const travelPhotos: TravelPhoto[] = [
     height: 901,
   },
   {
-    src: "/assets/images/Thailand_2019.webp",
-    alt: "Thailand, 2019",
-    caption: "Thailand 2019",
-    width: 757,
-    height: 1600,
-  },
-  {
-    src: "/assets/images/Danzig.webp",
-    alt: "Danzig, 2025",
-    caption: "Danzig 2025",
-    width: 1364,
-    height: 768,
-  },
-  {
-    src: "/assets/images/MountRushmore.webp",
-    alt: "Mount Rushmore, 2016",
-    caption: "Mount Rushmore 2016",
-    width: 896,
-    height: 1195,
-  },
-  {
-    src: "/assets/images/Sevilla_Kathedrale.webp",
-    alt: "Sevilla, Kathedrale, 2022",
-    caption: "Sevilla 2022 — Kathedrale",
-    width: 1600,
-    height: 721,
+    src: "/assets/images/London_towerbridge_2023.webp",
+    alt: "London, Tower Bridge, 2023",
+    caption: "London 2023 — Tower Bridge",
+    width: 1524,
+    height: 704,
   },
   {
     src: "/assets/images/Sevilla.webp",
@@ -269,11 +249,25 @@ export const travelPhotos: TravelPhoto[] = [
     height: 721,
   },
   {
+    src: "/assets/images/Thailand_2019.webp",
+    alt: "Thailand, 2019",
+    caption: "Thailand 2019",
+    width: 757,
+    height: 1600,
+  },
+  {
     src: "/assets/images/New_York_Nacht.webp",
     alt: "New York bei Nacht, 2017",
     caption: "New York 2017 — bei Nacht",
     width: 1600,
     height: 1200,
+  },
+  {
+    src: "/assets/images/MountRushmore.webp",
+    alt: "Mount Rushmore, 2016",
+    caption: "Mount Rushmore 2016",
+    width: 896,
+    height: 1195,
   },
 ];
 
