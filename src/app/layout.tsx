@@ -50,6 +50,16 @@ const jsonLd = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="de" className="dark">
+      <head>
+        {/* Ohne JavaScript läuft kein IntersectionObserver — dann bliebe alles
+            außer dem Hero unsichtbar und die Balken stünden auf Breite 0. */}
+        <noscript>
+          <style>{`
+            .reveal { opacity: 1 !important; transform: none !important; }
+            .bar-fill { width: var(--w) !important; transition: none !important; }
+          `}</style>
+        </noscript>
+      </head>
       <body>
         <script
           type="application/ld+json"

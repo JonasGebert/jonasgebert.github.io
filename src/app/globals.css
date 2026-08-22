@@ -117,3 +117,46 @@ body {
 .prose-doc th { text-align: left; padding: 0.5rem 0.75rem; background: rgba(30, 41, 59, 0.6); color: #e2e8f0; border: 1px solid var(--color-line); white-space: nowrap; }
 .prose-doc td { padding: 0.45rem 0.75rem; border: 1px solid var(--color-line); color: #b6c2d4; }
 .prose-doc tr:nth-child(even) td { background: rgba(30, 41, 59, 0.25); }
+
+/* --- Reduced Motion ---
+   Wer Bewegung reduziert haben will, bekommt denselben Inhalt ohne Animation:
+   Reveal-Blöcke sind sofort sichtbar, Balken stehen direkt auf ihrer Zielbreite. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal,
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .fade-up,
+  .fade-up-1,
+  .fade-up-2,
+  .fade-up-3 {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .portrait-frame {
+    animation: none;
+    box-shadow: 0 0 40px -8px rgba(34, 211, 238, 0.4);
+  }
+
+  .bar-fill {
+    width: var(--w);
+    transition: none;
+  }
+
+  .card {
+    transition: none;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+}
