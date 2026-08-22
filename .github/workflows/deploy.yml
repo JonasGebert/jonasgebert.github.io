@@ -30,6 +30,12 @@ jobs:
       - name: Abhängigkeiten installieren
         run: npm ci
 
+      - name: Typen prüfen
+        run: npm run typecheck
+
+      - name: Lint
+        run: npm run lint
+
       - name: Statischen Export bauen
         run: npm run build
 
