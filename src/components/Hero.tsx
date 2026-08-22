@@ -62,7 +62,7 @@ export function Hero() {
         <div className="fade-up-2 mx-auto w-full max-w-xs md:max-w-sm">
           <div className="portrait-frame relative overflow-hidden rounded-3xl border border-cyan-400/30">
             <Image
-              src="/assets/images/portrait.jpg"
+              src="/assets/images/portrait.webp"
               alt="Bewerbungsfoto von Jonas Gebert"
               width={896}
               height={1195}

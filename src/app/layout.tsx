@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: "Jonas Gebert — Mechatroniker & Maschinenbau-Student",
     description: profile.tagline,
     locale: "de_DE",
-    images: ["/assets/images/portrait.jpg"],
+    images: ["/assets/images/portrait.webp"],
   },
   twitter: {
     card: "summary_large_image",
