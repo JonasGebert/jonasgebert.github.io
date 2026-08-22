@@ -1,4 +1,6 @@
 import { profile } from "@/content/profile";
+import { studium } from "@/content/grades";
+import { formatMonthYear } from "@/lib/format";
 
 export function Footer() {
   return (
@@ -6,7 +8,7 @@ export function Footer() {
       <p>
         © {new Date().getFullYear()} {profile.fullName}
       </p>
-      <p className="mt-1">Erstellt mit Next.js · Inhalte zuletzt aktualisiert: Juli 2026</p>
+      <p className="mt-1">Erstellt mit Next.js · Inhalte zuletzt aktualisiert: {formatMonthYear(studium.stand)}</p>
     </footer>
   );
 }
