@@ -4,7 +4,7 @@
 
 - Dokumenttyp: Leistungsübersicht (Notenspiegel)
 - Aussteller: Hochschule für Angewandte Wissenschaften Hamburg (HAW Hamburg)
-- Datum: 18.08.2026
+- Datum: 30.08.2026
 - Ort: Hamburg
 - Sprache: Deutsch
 - Seitenanzahl: 3
@@ -20,7 +20,7 @@ Matrikelnummer: [geschwärzt]
 Geburtsdatum: [geschwärzt]
 Geburtsort: [geschwärzt]
 
-**LEISTUNGSÜBERSICHT** – Hamburg, 18.08.2026
+**LEISTUNGSÜBERSICHT** – Hamburg, 30.08.2026
 
 Studiengang: Bachelor Maschinenbau und Produktion (Bachelor of Science)
 Prüfungsordnungsversion: 2020 SoSe
@@ -38,7 +38,7 @@ Jonas Gebert hat folgende Prüfungen abgelegt:
 
 | Nr. | Bezeichnung | Datum | Bewertung | Status | CP | Art | Versuch | Ak |
 |---|---|---|---|---|---|---|---|---|
-| | **Gesamtkonto BA Maschinenbau und Produktion PSO 2020** | **28.07.2026** | **1,69** | **PV** | **159** | | | |
+| | **Gesamtkonto BA Maschinenbau und Produktion PSO 2020** | **03.08.2026** | **1,62** | **PV** | **164** | | | |
 | | **Semestergruppenwahl, Vorpraktikum und Studienfachberatung** | **19.04.2024** | | **BE** | | | | |
 | 1MP20-VP.SL-P | Vorpraktikum | 19.04.2024 | | BE | | SL | 1 | |
 | 1MP-SFB1.SL-P | Studienfachberatung im ersten Studienjahr | 15.04.2024 | | BE | | SB | 1 | |
@@ -98,14 +98,15 @@ Jonas Gebert hat folgende Prüfungen abgelegt:
 | **M-20200** | **Integrationsfächer** | **03.03.2026** | | **BE** | **4** | **M** | | |
 | 1MP-IF-5115.SL | Recht 2 | | | BE | 2 | SL | 1 | |
 | 1MP-IF-5118.SL | Wissenschaftliches Schreiben | 03.03.2026 | | BE | 2 | SL | 1 | |
-| | **Studienrichtung Digital Engineering and Mobility** | **27.07.2026** | **1,42** | **PV** | **35** | | | |
+| | **Studienrichtung Digital Engineering and Mobility** | **03.08.2026** | **1,33** | **PV** | **40** | | | |
 | **M-20310** | **Methodische Produktentwicklung** | **20.02.2026** | **1,00** | **BE** | **5** | **M** | | |
 | 1MP-20311.PL | Methodische Produktentwicklung | 20.02.2026 | 1,00 | BE | 5 | PL | 1 | |
 | 1MP-20312.SL | Methodische Produktentwicklung Laborpraktikum | 20.02.2026 | | BE | | SL | 1 | |
 | **M-20320** | **Softwareanwendungen im Maschinenbau** | **29.01.2026** | **1,00** | **BE** | **5** | **M** | | |
 | 1MP-20321.PL | Softwareanwendungen im Maschinenbau | 20.01.2026 | 1,00 | BE | 5 | PL | 1 | |
 | 1MP-20322.SL | Softwareanwendungen im Maschinenbau Laborpraktikum | 29.01.2026 | | BE | | SL | 1 | |
-| **M-20330** | **Maschinelles Lernen und Datenanalyse** | | | **PV** | | **M** | | |
+| **M-20330** | **Maschinelles Lernen und Datenanalyse** | **03.08.2026** | **0,70** | **BE** | **5** | **M** | | |
+| 1MP-20331.PL | Maschinelles Lernen und Datenanalyse | 03.08.2026 | 0,70 | BE | 5 | PL | 1 | |
 | 1MP-20332.SL | Maschinelles Lernen und Datenanalyse Laborpraktikum | 09.07.2026 | | BE | | SL | 1 | |
 | **M-20340** | **Autonome mobile Systeme** | **06.02.2026** | **1,30** | **BE** | **5** | **M** | | |
 | 1MP-20341.PL | Autonome mobile Systeme | 06.02.2026 | 1,30 | BE | 5 | PL | 1 | |
@@ -154,15 +155,16 @@ Jonas Gebert hat folgende Prüfungen abgelegt:
 | M-20210 | Mess-, Steuer- und Regelungstechnik | 1,00 | 9 |
 | M-20310 | Methodische Produktentwicklung | 1,00 | 5 |
 | M-20320 | Softwareanwendungen im Maschinenbau | 1,00 | 5 |
+| M-20330 | Maschinelles Lernen und Datenanalyse | 0,70 | 5 |
 | M-20340 | Autonome mobile Systeme | 1,30 | 5 |
 | M-20400 | Urbane Mobilität und Elektromobilität | 1,30 | 5 |
 | M-20410 | Fügetechnik | 2,00 | 5 |
 | M-20440 | Roboterbasierte Fertigung | 1,70 | 5 |
 | M-21030 | Produktionsplanung und -steuerung | 1,70 | 5 |
 | | **Kernstudium Gesamtnote** | **1,96** | **102** |
-| | **Studienrichtung Gesamtnote** | **1,42** | **35** |
+| | **Studienrichtung Gesamtnote** | **1,33** | **40** |
 | | **Wahlpflichtmodule Studienrichtung** | **1,67** | **20** |
-| | **Gesamtkonto** | **1,69** | **159** |
+| | **Gesamtkonto** | **1,62** | **164** |
 
 Unbenotet bestanden: Vorpraktikum, Studienfachberatung, Praxisprojekt (3 CP), Integrationsfächer (Recht 2, Wissenschaftliches Schreiben — 4 CP), Hauptpraktikum (15 CP).
 
@@ -236,4 +238,4 @@ Leistungen aus dem Zusatzkonto fließen nicht in die Gesamtberechnung ein.
 - I = inländische Hochschule
 - O = bestanden ohne Note
 
-HAW Hamburg – Stand: 18.08.2026 – Matrikelnummer: [geschwärzt]
+HAW Hamburg – Stand: 30.08.2026 – Matrikelnummer: [geschwärzt]

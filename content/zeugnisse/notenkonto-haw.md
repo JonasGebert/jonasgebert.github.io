@@ -4,7 +4,7 @@
 
 - Dokumenttyp: Notenkonto (Sortierung: Prüfungssemester absteigend)
 - Aussteller: HAW Hamburg (Hochschule für Angewandte Wissenschaften Hamburg)
-- Datum: 18.08.2026
+- Datum: 30.08.2026
 - Ort: Hamburg
 - Sprache: Deutsch
 - Seitenanzahl: 3
@@ -29,6 +29,7 @@ Matrikelnummer: [geschwärzt]
 | SoSe 26 | 13.07.2026 | Fügetechnik (1MP-20411.PL) | 2,00 BE | PL | 6 | 1 | 27.07.2026 | |
 | SoSe 26 | | Fügetechnik Laborpraktikum (1MP-20412.SL) | BE | SL | 6 | 1 | 27.07.2026 | |
 | SoSe 26 | 28.07.2026 | Hauptpraktikum (1MP-21320.SL) | BE | SL | 7 | 1 | 28.07.2026 | |
+| SoSe 26 | 03.08.2026 | Maschinelles Lernen und Datenanalyse (1MP-20331.PL) | 0,70 BE | PL | 4 | 1 | 24.08.2026 | |
 | SoSe 26 | 09.07.2026 | Maschinelles Lernen und Datenanalyse Laborpraktikum (1MP-20332.SL) | BE | SL | 4 | 1 | 13.07.2026 | |
 | SoSe 26 | 17.07.2026 | Mess-, Steuer- und Regelungstechnik (1MP-20211.PL) | 1,00 BE | PL | 6 | 1 | 14.08.2026 | |
 | SoSe 26 | | Mess-, Steuer- und Regelungstechnik Laborpraktikum (1MP-20212.SL) | BE | SL | 6 | 1 | 03.08.2026 | |
@@ -98,6 +99,7 @@ Matrikelnummer: [geschwärzt]
 | Semester | Prüfungsbezeichnung | Note |
 |---|---|---|
 | SoSe 26 | Fügetechnik | 2,00 |
+| SoSe 26 | Maschinelles Lernen und Datenanalyse | 0,70 |
 | SoSe 26 | Mess-, Steuer- und Regelungstechnik | 1,00 |
 | SoSe 26 | Roboterbasierte Fertigung | 1,70 |
 | SoSe 26 | Urbane Mobilität und Elektromobilität | 1,30 |
@@ -137,4 +139,4 @@ empf.FS = Empfohlenes Fachsemester; pt = Punkte; Art: PL=Prüfungsleistung, SL=S
 Die Daten sind sorgfältig zu prüfen. Ab Wintersemester 2024/25 wird das Notenfreigabedatum flächendeckend gespeichert.
 Bei fehlerhaften bzw. fehlenden Eintragungen wenden Sie sich bitte umgehend an das Fakultätsservicebüro.
 
-HAW Hamburg – Stand: 18.08.2026
+HAW Hamburg – Stand: 30.08.2026

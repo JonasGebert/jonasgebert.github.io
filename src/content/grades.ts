@@ -15,13 +15,13 @@ export const studium = {
   schwerpunkt: "Digitale Produktion",
   semester: 6,
   /** Ausstellungsdatum des zugrunde liegenden Notenspiegels (dd.mm.yyyy). */
-  stand: "18.08.2026",
+  stand: "30.08.2026",
 } as const;
 
 export const gradeSummary = {
-  gesamt: { label: "Gesamtkonto", grade: 1.69, cp: 159, of: 210 },
+  gesamt: { label: "Gesamtkonto", grade: 1.62, cp: 164, of: 210 },
   kern: { label: "Kernstudium", grade: 1.96, cp: 102 },
-  richtung: { label: "Studienrichtung Digital Engineering and Mobility", grade: 1.42, cp: 35 },
+  richtung: { label: "Studienrichtung Digital Engineering and Mobility", grade: 1.33, cp: 40 },
 } as const;
 
 export const modules: Module[] = [
@@ -46,6 +46,7 @@ export const modules: Module[] = [
   { nr: "M-20210", name: "Mess-, Steuer- und Regelungstechnik", grade: 1.0, cp: 9, area: "Kernstudium" },
   { nr: "M-20310", name: "Methodische Produktentwicklung", grade: 1.0, cp: 5, area: "Studienrichtung" },
   { nr: "M-20320", name: "Softwareanwendungen im Maschinenbau", grade: 1.0, cp: 5, area: "Studienrichtung" },
+  { nr: "M-20330", name: "Maschinelles Lernen und Datenanalyse", grade: 0.7, cp: 5, area: "Studienrichtung" },
   { nr: "M-20340", name: "Autonome mobile Systeme", grade: 1.3, cp: 5, area: "Studienrichtung" },
   { nr: "M-20400", name: "Urbane Mobilität und Elektromobilität", grade: 1.3, cp: 5, area: "Studienrichtung" },
   { nr: "M-20410", name: "Fügetechnik", grade: 2.0, cp: 5, area: "Studienrichtung" },
