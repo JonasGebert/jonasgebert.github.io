@@ -8,7 +8,7 @@ import { CertificateSection } from "@/components/CertificateSection";
 import { Hobbies } from "@/components/Hobbies";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
-import { TravelGallery } from "@/components/TravelGallery";
+import { TravelMap } from "@/components/TravelMap";
 import { zeugnisse, zertifikate } from "@/content/zeugnisse";
 
 export default function Home() {
@@ -43,7 +43,7 @@ export default function Home() {
           title="Zertifikate & Bescheinigungen"
           intro="Zusatzqualifikationen aus Lehrgängen und Seminaren — jeweils als Web-Version und PDF."
         />
-        <TravelGallery />
+        <TravelMap />
         <Hobbies />
         <Contact />
       </main>

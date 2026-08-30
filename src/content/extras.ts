@@ -199,79 +199,196 @@ export const hobbies: Hobby[] = [
 ];
 
 /**
- * Reise-Galerie: Bild in public/assets/images/ ablegen und hier eine Zeile ergänzen.
+ * Reisen — Quelle für die Reisekarte (Sektion "Reisen").
+ *
+ * Eine Reise pro Eintrag, Fotos als Array: eine Station kann mehrere Bilder haben.
+ * Neue Reise = Bild nach public/assets/images/ legen und hier einen Eintrag ergänzen.
+ * lat/lon grob auf Orts- oder Regionsebene — die Karte zeigt Länder, keine Hausnummern,
+ * und private Aufenthaltsorte gehören nicht auf eine öffentliche Seite.
  * width/height = echte Pixelmaße des Bildes (verhindert Layout-Springen beim Laden).
- * Reihenfolge = Aufnahmedatum absteigend (neueste Reise zuerst). Neue Bilder oben einsortieren.
+ * Reihenfolge = Aufnahmedatum absteigend (neueste Reise zuerst).
  */
-export type TravelPhoto = { src: string; alt: string; caption: string; width: number; height: number };
+export type TravelPhoto = { src: string; alt: string; caption?: string; width: number; height: number };
 
-export const travelPhotos: TravelPhoto[] = [
+export type TravelTrip = {
+  slug: string;
+  /** Ort oder Region, wie er im Dialog steht. */
+  ort: string;
+  land: string;
+  jahr: number;
+  lat: number;
+  lon: number;
+  photos: TravelPhoto[];
+};
+
+export const travelTrips: TravelTrip[] = [
   {
-    src: "/assets/images/travel_egypt_2026_dive.webp",
-    alt: "Tauchgang in Ägypten, 2026",
-    caption: "Ägypten 2026 — Tauchgang",
-    width: 1600,
-    height: 1599,
+    slug: "aegypten-2026",
+    ort: "Rotes Meer",
+    land: "Ägypten",
+    jahr: 2026,
+    lat: 27.2,
+    lon: 33.8,
+    photos: [
+      {
+        src: "/assets/images/travel_egypt_2026_dive.webp",
+        alt: "Tauchgang im Roten Meer, Ägypten 2026",
+        caption: "Tauchgang im Roten Meer",
+        width: 1600,
+        height: 1599,
+      },
+    ],
   },
   {
-    src: "/assets/images/Kreta_canyon_2025.webp",
-    alt: "Kreta, Canyon, 2025",
-    caption: "Kreta 2025 — Canyon",
-    width: 768,
-    height: 1364,
+    slug: "kreta-2025",
+    ort: "Kreta",
+    land: "Griechenland",
+    jahr: 2025,
+    lat: 35.3,
+    lon: 24.0,
+    photos: [
+      {
+        src: "/assets/images/Kreta_canyon_2025.webp",
+        alt: "Schlucht auf Kreta, 2025",
+        caption: "Wanderung durch die Schlucht",
+        width: 768,
+        height: 1364,
+      },
+    ],
   },
   {
-    src: "/assets/images/Danzig.webp",
-    alt: "Danzig, 2025",
-    caption: "Danzig 2025",
-    width: 1364,
-    height: 768,
+    slug: "danzig-2025",
+    ort: "Danzig",
+    land: "Polen",
+    jahr: 2025,
+    lat: 54.35,
+    lon: 18.65,
+    photos: [
+      {
+        src: "/assets/images/Danzig.webp",
+        alt: "Danzig, 2025",
+        width: 1364,
+        height: 768,
+      },
+    ],
   },
   {
-    src: "/assets/images/Quadtour_Djerba_2023.webp",
-    alt: "Quadtour auf Djerba, 2023",
-    caption: "Djerba 2023 — Quadtour",
-    width: 1600,
-    height: 901,
+    slug: "djerba-2023",
+    ort: "Djerba",
+    land: "Tunesien",
+    jahr: 2023,
+    lat: 33.8,
+    lon: 10.9,
+    photos: [
+      {
+        src: "/assets/images/Quadtour_Djerba_2023.webp",
+        alt: "Quadtour auf Djerba, 2023",
+        caption: "Quadtour durch die Insel",
+        width: 1600,
+        height: 901,
+      },
+    ],
   },
   {
-    src: "/assets/images/London_towerbridge_2023.webp",
-    alt: "London, Tower Bridge, 2023",
-    caption: "London 2023 — Tower Bridge",
-    width: 1524,
-    height: 704,
+    slug: "london-2023",
+    ort: "London",
+    land: "Vereinigtes Königreich",
+    jahr: 2023,
+    lat: 51.5,
+    lon: -0.08,
+    photos: [
+      {
+        src: "/assets/images/London_towerbridge_2023.webp",
+        alt: "Tower Bridge in London, 2023",
+        caption: "Tower Bridge",
+        width: 1524,
+        height: 704,
+      },
+    ],
   },
   {
-    src: "/assets/images/Sevilla.webp",
-    alt: "Sevilla, 2022",
-    caption: "Sevilla 2022",
-    width: 1600,
-    height: 721,
+    slug: "sevilla-2022",
+    ort: "Sevilla",
+    land: "Spanien",
+    jahr: 2022,
+    lat: 37.39,
+    lon: -5.99,
+    photos: [
+      {
+        src: "/assets/images/Sevilla.webp",
+        alt: "Plaza de España in Sevilla, 2022",
+        caption: "Plaza de España",
+        width: 1600,
+        height: 721,
+      },
+      {
+        src: "/assets/images/Sevilla_Kathedrale.webp",
+        alt: "Kathedrale von Sevilla, 2022",
+        caption: "Kathedrale von Sevilla",
+        width: 1600,
+        height: 721,
+      },
+    ],
   },
   {
-    src: "/assets/images/Thailand_2019.webp",
-    alt: "Thailand, 2019",
-    caption: "Thailand 2019",
-    width: 757,
-    height: 1600,
+    slug: "thailand-2019",
+    ort: "Thailand",
+    land: "Thailand",
+    jahr: 2019,
+    lat: 13.75,
+    lon: 100.5,
+    photos: [
+      {
+        src: "/assets/images/Thailand_2019.webp",
+        alt: "Thailand, 2019",
+        width: 757,
+        height: 1600,
+      },
+    ],
   },
   {
-    src: "/assets/images/New_York_Nacht.webp",
-    alt: "New York bei Nacht, 2017",
-    caption: "New York 2017 — bei Nacht",
-    width: 1600,
-    height: 1200,
+    slug: "new-york-2017",
+    ort: "New York",
+    land: "USA",
+    jahr: 2017,
+    lat: 40.71,
+    lon: -74.0,
+    photos: [
+      {
+        src: "/assets/images/New_York_Nacht.webp",
+        alt: "New York bei Nacht, 2017",
+        caption: "Skyline bei Nacht",
+        width: 1600,
+        height: 1200,
+      },
+      {
+        src: "/assets/images/New_York.webp",
+        alt: "New York, 2017",
+        width: 1024,
+        height: 768,
+      },
+    ],
   },
   {
-    src: "/assets/images/MountRushmore.webp",
-    alt: "Mount Rushmore, 2016",
-    caption: "Mount Rushmore 2016",
-    width: 896,
-    height: 1195,
+    slug: "mount-rushmore-2016",
+    ort: "Mount Rushmore",
+    land: "USA",
+    jahr: 2016,
+    lat: 43.88,
+    lon: -103.46,
+    photos: [
+      {
+        src: "/assets/images/MountRushmore.webp",
+        alt: "Mount Rushmore, 2016",
+        width: 896,
+        height: 1195,
+      },
+    ],
   },
 ];
 
 export const travelSection = {
   title: "Reisen",
-  message: "Eindrücke von unterwegs — die Galerie wächst mit jeder Reise.",
+  message:
+    "Neun Stationen, acht Länder, vier Kontinente. Pin auf der Karte antippen oder einen Ort aus der Liste wählen — dann kommen die Bilder dazu.",
 } as const;
