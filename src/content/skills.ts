@@ -46,7 +46,6 @@ export const skillGroups: SkillGroup[] = [
     icon: "file",
     skills: [
       { name: "Word / Excel / PowerPoint", level: 80, evidence: "Studium & Berufsalltag" },
-      { name: "Produktionsplanung (PPS)", level: 70, evidence: "PPS: Note 1,7 · Methodische Produktentwicklung: 1,0" },
     ],
   },
 ];
