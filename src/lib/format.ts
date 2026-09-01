@@ -13,3 +13,12 @@ export function formatMonthYear(ddmmyyyy: string): string {
   const [, mm, yyyy] = ddmmyyyy.split(".");
   return `${MONATE[Number(mm) - 1]} ${yyyy}`;
 }
+
+/**
+ * Besuchsjahre einer Reisestation für die Anzeige: absteigend, mit Mittelpunkt getrennt.
+ * "2024 · 2022 · 2020". Für aria-Labels stattdessen `jahre.join(", ")` verwenden —
+ * Screenreader lesen den Mittelpunkt sonst als Wort vor.
+ */
+export function formatJahre(jahre: readonly number[]): string {
+  return [...jahre].sort((a, b) => b - a).join(" · ");
+}

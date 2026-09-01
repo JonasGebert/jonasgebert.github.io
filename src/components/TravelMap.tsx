@@ -4,6 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { travelSection, travelTrips, type TravelTrip } from "@/content/extras";
 import { WORLD_LAND_PATH, WORLD_VIEWBOX, toMapPercent } from "@/content/worldMap";
+import { formatJahre } from "@/lib/format";
 import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
 import { Icon } from "./Icon";
@@ -99,7 +100,7 @@ export function TravelMap() {
                   }`}
                 />
                 <span className="pointer-events-none absolute bottom-8 whitespace-nowrap rounded-md border border-slate-600/50 bg-slate-900/95 px-2 py-1 text-xs font-medium text-slate-200 opacity-0 shadow-lg transition-opacity duration-200 group-hover:opacity-100">
-                  {t.ort} {t.jahr}
+                  {t.ort} {formatJahre(t.jahre)}
                 </span>
               </button>
             );
@@ -121,7 +122,7 @@ export function TravelMap() {
                   }}
                   onClick={() => open(t.slug)}
                   aria-haspopup="dialog"
-                  aria-label={`${t.ort}, ${t.land} ${t.jahr} — Bilder ansehen`}
+                  aria-label={`${t.ort}, ${t.land} ${t.jahre.join(", ")} — Bilder ansehen`}
                   className={`flex min-h-11 items-center gap-2 rounded-full border px-4 py-2 text-sm transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-400 ${
                     isActive
                       ? "border-cyan-400/60 bg-cyan-400/10 text-cyan-200"
@@ -129,7 +130,7 @@ export function TravelMap() {
                   }`}
                 >
                   <span className="font-medium">{t.ort}</span>
-                  <span className="text-slate-500">{t.jahr}</span>
+                  <span className="text-slate-500">{formatJahre(t.jahre)}</span>
                 </button>
               </li>
             );
@@ -158,7 +159,7 @@ export function TravelMap() {
                   {trip.ort}
                 </h3>
                 <p className="text-sm text-slate-400">
-                  {trip.land} · {trip.jahr}
+                  {trip.land} · {formatJahre(trip.jahre)}
                 </p>
               </div>
               <button
@@ -185,7 +186,23 @@ export function TravelMap() {
                   <figcaption className="px-5 py-3 text-sm text-slate-400">{photo.caption}</figcaption>
                 ) : null}
               </figure>
-            ) : null}
+            ) : (
+              // Reise ohne Fotos: der Dialog wäre sonst eine leere Box unter der
+              // Überschrift. Platzhalter im selben Seitenverhältnis, damit später
+              // eingesetzte Bilder das Layout nicht verschieben.
+              <div className="m-0 bg-slate-950">
+                <Image
+                  src="/assets/images/placeholder-reise.svg"
+                  alt=""
+                  width={1600}
+                  height={900}
+                  className="max-h-[65vh] w-full object-contain opacity-70"
+                />
+                <p className="px-5 py-3 text-sm text-slate-400">
+                  Fotos zu dieser Station folgen.
+                </p>
+              </div>
+            )}
 
             {photos.length > 1 ? (
               <div className="flex items-center justify-between border-t border-slate-700/50 px-5 py-3">

@@ -201,12 +201,18 @@ export const hobbies: Hobby[] = [
 /**
  * Reisen — Quelle für die Reisekarte (Sektion "Reisen").
  *
- * Eine Reise pro Eintrag, Fotos als Array: eine Station kann mehrere Bilder haben.
- * Neue Reise = Bild nach public/assets/images/ legen und hier einen Eintrag ergänzen.
+ * Eine Station pro Eintrag, nicht eine Reise pro Eintrag: `jahre` sammelt alle Jahre,
+ * in denen der Ort besucht wurde. Grund ist die Weltkarte — Andalusien 2020/2022/2024
+ * liegt auf identischen Koordinaten, drei Einträge wären drei exakt deckungsgleiche
+ * Pins, von denen nur der oberste klickbar ist.
+ * Fotos als Array: eine Station kann mehrere Bilder haben, auch aus verschiedenen Jahren.
+ * Neue Reise = Bild nach public/assets/images/ legen und hier einen Eintrag ergänzen
+ * bzw. bei einem bekannten Ort nur das Jahr in `jahre` nachtragen.
+ * Leeres `photos`-Array ist erlaubt — der Dialog zeigt dann einen Platzhalter.
  * lat/lon grob auf Orts- oder Regionsebene — die Karte zeigt Länder, keine Hausnummern,
  * und private Aufenthaltsorte gehören nicht auf eine öffentliche Seite.
  * width/height = echte Pixelmaße des Bildes (verhindert Layout-Springen beim Laden).
- * Reihenfolge = Aufnahmedatum absteigend (neueste Reise zuerst).
+ * Reihenfolge = jüngstes Jahr absteigend (neueste Station zuerst).
  */
 export type TravelPhoto = { src: string; alt: string; caption?: string; width: number; height: number };
 
@@ -215,7 +221,8 @@ export type TravelTrip = {
   /** Ort oder Region, wie er im Dialog steht. */
   ort: string;
   land: string;
-  jahr: number;
+  /** Alle Besuchsjahre, absteigend. Mindestens ein Eintrag. */
+  jahre: number[];
   lat: number;
   lon: number;
   photos: TravelPhoto[];
@@ -223,27 +230,36 @@ export type TravelTrip = {
 
 export const travelTrips: TravelTrip[] = [
   {
-    slug: "aegypten-2026",
-    ort: "Rotes Meer",
+    slug: "aegypten-rotes-meer",
+    ort: "Makadi & Soma Bay",
     land: "Ägypten",
-    jahr: 2026,
-    lat: 27.2,
-    lon: 33.8,
+    jahre: [2026, 2025],
+    lat: 26.91,
+    lon: 33.94,
     photos: [
       {
         src: "/assets/images/travel_egypt_2026_dive.webp",
-        alt: "Tauchgang im Roten Meer, Ägypten 2026",
-        caption: "Tauchgang im Roten Meer",
+        alt: "Tauchgang im Roten Meer, Makadi Bay 2026",
+        caption: "Tauchgang vor Makadi Bay, 2026",
         width: 1600,
         height: 1599,
       },
     ],
   },
   {
+    slug: "ringkoebing",
+    ort: "Ringkøbing",
+    land: "Dänemark",
+    jahre: [2026, 2023],
+    lat: 56.09,
+    lon: 8.24,
+    photos: [],
+  },
+  {
     slug: "kreta-2025",
     ort: "Kreta",
     land: "Griechenland",
-    jahr: 2025,
+    jahre: [2025],
     lat: 35.3,
     lon: 24.0,
     photos: [
@@ -260,7 +276,7 @@ export const travelTrips: TravelTrip[] = [
     slug: "danzig-2025",
     ort: "Danzig",
     land: "Polen",
-    jahr: 2025,
+    jahre: [2025],
     lat: 54.35,
     lon: 18.65,
     photos: [
@@ -273,10 +289,43 @@ export const travelTrips: TravelTrip[] = [
     ],
   },
   {
+    slug: "andalusien",
+    ort: "Andalusien",
+    land: "Spanien",
+    jahre: [2024, 2022, 2020],
+    lat: 37.39,
+    lon: -5.99,
+    photos: [
+      {
+        src: "/assets/images/Sevilla.webp",
+        alt: "Plaza de España in Sevilla, 2022",
+        caption: "Plaza de España, Sevilla 2022",
+        width: 1600,
+        height: 721,
+      },
+      {
+        src: "/assets/images/Sevilla_Kathedrale.webp",
+        alt: "Kathedrale von Sevilla, 2022",
+        caption: "Kathedrale von Sevilla, 2022",
+        width: 1600,
+        height: 721,
+      },
+    ],
+  },
+  {
+    slug: "enschede",
+    ort: "Enschede",
+    land: "Niederlande",
+    jahre: [2023, 2022],
+    lat: 52.22,
+    lon: 6.9,
+    photos: [],
+  },
+  {
     slug: "djerba-2023",
     ort: "Djerba",
     land: "Tunesien",
-    jahr: 2023,
+    jahre: [2023],
     lat: 33.8,
     lon: 10.9,
     photos: [
@@ -293,7 +342,7 @@ export const travelTrips: TravelTrip[] = [
     slug: "london-2023",
     ort: "London",
     land: "Vereinigtes Königreich",
-    jahr: 2023,
+    jahre: [2023],
     lat: 51.5,
     lon: -0.08,
     photos: [
@@ -307,34 +356,46 @@ export const travelTrips: TravelTrip[] = [
     ],
   },
   {
-    slug: "sevilla-2022",
-    ort: "Sevilla",
-    land: "Spanien",
-    jahr: 2022,
-    lat: 37.39,
-    lon: -5.99,
-    photos: [
-      {
-        src: "/assets/images/Sevilla.webp",
-        alt: "Plaza de España in Sevilla, 2022",
-        caption: "Plaza de España",
-        width: 1600,
-        height: 721,
-      },
-      {
-        src: "/assets/images/Sevilla_Kathedrale.webp",
-        alt: "Kathedrale von Sevilla, 2022",
-        caption: "Kathedrale von Sevilla",
-        width: 1600,
-        height: 721,
-      },
-    ],
+    slug: "paris-2022",
+    ort: "Paris & Disneyland",
+    land: "Frankreich",
+    jahre: [2022],
+    lat: 48.86,
+    lon: 2.35,
+    photos: [],
+  },
+  {
+    slug: "foehr-2021",
+    ort: "Föhr",
+    land: "Deutschland",
+    jahre: [2021],
+    lat: 54.7,
+    lon: 8.5,
+    photos: [],
+  },
+  {
+    slug: "nizza-2019",
+    ort: "Nizza",
+    land: "Frankreich",
+    jahre: [2019],
+    lat: 43.7,
+    lon: 7.27,
+    photos: [],
+  },
+  {
+    slug: "kalabrien-2019",
+    ort: "Kalabrien",
+    land: "Italien",
+    jahre: [2019],
+    lat: 38.91,
+    lon: 16.59,
+    photos: [],
   },
   {
     slug: "thailand-2019",
     ort: "Thailand",
     land: "Thailand",
-    jahr: 2019,
+    jahre: [2019],
     lat: 13.75,
     lon: 100.5,
     photos: [
@@ -350,7 +411,7 @@ export const travelTrips: TravelTrip[] = [
     slug: "new-york-2017",
     ort: "New York",
     land: "USA",
-    jahr: 2017,
+    jahre: [2017],
     lat: 40.71,
     lon: -74.0,
     photos: [
@@ -373,7 +434,7 @@ export const travelTrips: TravelTrip[] = [
     slug: "mount-rushmore-2016",
     ort: "Mount Rushmore",
     land: "USA",
-    jahr: 2016,
+    jahre: [2016],
     lat: 43.88,
     lon: -103.46,
     photos: [
@@ -387,8 +448,35 @@ export const travelTrips: TravelTrip[] = [
   },
 ];
 
+/**
+ * Kontinent je Land — nur für die Kennzahl in der Sektions-Einleitung.
+ * Muss jedes `land` aus `travelTrips` enthalten, sonst zählt der Kontinent als undefined.
+ */
+const KONTINENT_JE_LAND: Record<string, string> = {
+  Ägypten: "Afrika",
+  Tunesien: "Afrika",
+  Dänemark: "Europa",
+  Deutschland: "Europa",
+  Frankreich: "Europa",
+  Griechenland: "Europa",
+  Italien: "Europa",
+  Niederlande: "Europa",
+  Polen: "Europa",
+  Spanien: "Europa",
+  "Vereinigtes Königreich": "Europa",
+  Thailand: "Asien",
+  USA: "Nordamerika",
+};
+
+/**
+ * Kennzahlen werden aus `travelTrips` abgeleitet, nicht in die Prosa geschrieben —
+ * sonst laufen Text und Karte beim nächsten Eintrag auseinander.
+ */
+const stationen = travelTrips.length;
+const laender = new Set(travelTrips.map((t) => t.land)).size;
+const kontinente = new Set(travelTrips.map((t) => KONTINENT_JE_LAND[t.land])).size;
+
 export const travelSection = {
   title: "Reisen",
-  message:
-    "Neun Stationen, acht Länder, vier Kontinente. Pin auf der Karte antippen oder einen Ort aus der Liste wählen — dann kommen die Bilder dazu.",
+  message: `${stationen} Stationen, ${laender} Länder, ${kontinente} Kontinente. Pin auf der Karte antippen oder einen Ort aus der Liste wählen — dann kommen die Bilder dazu.`,
 } as const;
