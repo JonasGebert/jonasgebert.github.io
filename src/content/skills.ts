@@ -90,7 +90,7 @@ export const softSkills: SoftSkill[] = [
   {
     name: "Teamarbeit im internationalen Umfeld",
     icon: "globe",
-    evidence: "Mehrjährige Mitarbeit in einer englischsprachigen Forschungsgruppe; „er integrierte sich sehr gut in das Team.“",
+    evidence: "Mitarbeit in einer englischsprachigen Forschungsgruppe; „er integrierte sich sehr gut in das Team.“",
     source: "Arbeitszeugnis DESY FS-DS",
   },
 ];

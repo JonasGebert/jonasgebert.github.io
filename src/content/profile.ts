@@ -18,7 +18,7 @@ export const profile = {
     {
       name: "Englisch",
       level:
-        "Fließend — unter anderem durch mehrjährige Arbeit in einer englischsprachigen Forschungsgruppe",
+        "Fließend — unter anderem durch die Arbeit in einer englischsprachigen Forschungsgruppe",
     },
   ],
   interests: ["Elektronik", "Automobil", "Motorrad", "3D-Druck"],
