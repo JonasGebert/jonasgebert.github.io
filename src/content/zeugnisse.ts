@@ -102,6 +102,15 @@ export const zertifikate: Zeugnis[] = [
     pdf: "/documents/DESY_Schweissen_Waermebehandlung.pdf",
   },
   {
+    slug: "zert-ifb-jav1",
+    title: "Seminar JAV Teil I",
+    issuer: "ifb Institut zur Fortbildung von Betriebsräten",
+    date: "10.03.2023",
+    category: "Zertifikat",
+    highlight: "Mitbestimmung nach Betriebsverfassungsrecht, Aufgaben & Geschäftsführung der JAV, Konfliktlösung",
+    pdf: "/documents/IFB_JAV1_Zertifikat.pdf",
+  },
+  {
     slug: "zert-ifb-jav2",
     title: "Seminar JAV Teil II",
     issuer: "ifb Institut zur Fortbildung von Betriebsräten",

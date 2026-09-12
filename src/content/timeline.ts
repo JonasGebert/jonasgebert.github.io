@@ -64,6 +64,7 @@ export const timeline: TimelineItem[] = [
       "pruefungszeugnis-mechatroniker",
       "ausbildungszeugnis-desy",
       "berufsschulzeugnis-bs19",
+      "zert-ifb-jav1",
       "zert-ifb-jav2",
     ],
   },
