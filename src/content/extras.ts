@@ -104,6 +104,20 @@ export const hobbies: Hobby[] = [
     note: "Tauchschein — die Ruhe und Welt unter Wasser.",
     images: [
       {
+        src: "/assets/images/Tauchen_02.webp",
+        alt: "Tauchen an einer Meerwasserentsalzungsanlage",
+        caption: "Tauchen an einer Meerwasserentsalzungsanlage",
+        width: 900,
+        height: 1600,
+      },
+      {
+        src: "/assets/images/Tauchen_01.webp",
+        alt: "Tauchen im Mittelmeer",
+        caption: "Tauchen im Mittelmeer",
+        width: 900,
+        height: 1600,
+      },
+      {
         src: "/assets/images/Arabischer_Doktorfisch.webp",
         alt: "Arabischer Doktorfisch",
         caption: "Arabischer Doktorfisch",
@@ -194,7 +208,22 @@ export const hobbies: Hobby[] = [
     name: "Segeln",
     icon: "sailing",
     note: "Katamaranschein — Wind, Wasser und volle Kontrolle über zwei Rümpfe.",
-    images: [],
+    images: [
+      {
+        src: "/assets/images/KatamaranFront.webp",
+        alt: "Blick vom Katamaran nach vorn",
+        caption: "Unter Segeln",
+        width: 900,
+        height: 1600,
+      },
+      {
+        src: "/assets/images/KatamaranSelfie.webp",
+        alt: "Am Steuer des Katamarans auf dem Wasser",
+        caption: "Am Steuer",
+        width: 900,
+        height: 1600,
+      },
+    ],
   },
 ];
 
