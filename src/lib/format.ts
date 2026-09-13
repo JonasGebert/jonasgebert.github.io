@@ -14,6 +14,11 @@ export function formatMonthYear(ddmmyyyy: string): string {
   return `${MONATE[Number(mm) - 1]} ${yyyy}`;
 }
 
+/** Date -> "September 2026". Für Angaben, die aus dem Build-Zeitpunkt kommen. */
+export function formatMonthYearFromDate(date: Date): string {
+  return `${MONATE[date.getMonth()]} ${date.getFullYear()}`;
+}
+
 /**
  * Besuchsjahre einer Reisestation für die Anzeige: absteigend, mit Mittelpunkt getrennt.
  * "2024 · 2022 · 2020". Für aria-Labels stattdessen `jahre.join(", ")` verwenden —
