@@ -7,9 +7,11 @@ import { Skills } from "@/components/Skills";
 import { CertificateSection } from "@/components/CertificateSection";
 import { Hobbies } from "@/components/Hobbies";
 import { Contact } from "@/components/Contact";
-import { Footer } from "@/components/Footer";
 import { TravelMap } from "@/components/TravelMap";
 import { zeugnisse, zertifikate } from "@/content/zeugnisse";
+
+// Der Footer steht im Root-Layout (src/app/layout.tsx), damit er auf allen Seiten
+// erscheint — und mit ihm der Link zur Datenschutzerklärung.
 
 export default function Home() {
   return (
@@ -47,7 +49,6 @@ export default function Home() {
         <Hobbies />
         <Contact />
       </main>
-      <Footer />
     </>
   );
 }

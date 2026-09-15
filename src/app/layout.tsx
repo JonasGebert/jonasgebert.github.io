@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { profile } from "@/content/profile";
+import { Footer } from "@/components/Footer";
 import Analytics from "./Analytics";
 
 const SITE_URL = "https://jonasgebert.github.io";
@@ -66,6 +67,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         {children}
+        {/* Der Footer liegt im Layout und nicht in page.tsx, damit der Link zur
+            Datenschutzerklärung von jeder Seite aus erreichbar ist. */}
+        <Footer />
         <Analytics />
       </body>
     </html>

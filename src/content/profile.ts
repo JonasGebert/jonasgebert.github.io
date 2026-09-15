@@ -3,6 +3,7 @@
  * Alle Studien-Zahlen kommen aus content/grades.ts, nicht hier hartkodieren.
  */
 import { gradeSummary, studium } from "./grades";
+import { kontaktEmail } from "./kontakt";
 import { formatGrade } from "@/lib/format";
 
 export const profile = {
@@ -13,6 +14,8 @@ export const profile = {
   github: "https://github.com/JonasGebert",
   linkedin: "https://www.linkedin.com/in/jonas-gebert-0a8482382/",
   location: "Hamburg",
+  /** Kontaktadresse für die Datenschutzerklärung — gepflegt in ./kontakt.ts. */
+  kontaktEmail,
   languages: [
     { name: "Deutsch", level: "Muttersprache" },
     {

@@ -1,8 +1,9 @@
 import type { NextConfig } from "next";
 
-// Build-Zeit-Prüfung der Notenschnitte (läuft nur hier im Node-Prozess,
-// kommt damit nicht ins Client-Bundle). Wirft bei Abweichung und bricht den Build ab.
-import "./src/content/grades.check";
+// Build-Zeit-Prüfungen (laufen nur hier im Node-Prozess, kommen damit nicht ins
+// Client-Bundle). Werfen bei Abweichung und brechen den Build ab.
+import "./src/content/grades.check"; // Notenschnitte gegen die Modulliste
+import "./src/content/legal.check"; // Pflichtangaben der Datenschutzerklärung
 
 const nextConfig: NextConfig = {
   output: "export",

@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/",
     ...listZeugnisSlugs().map((slug) => `/zeugnisse/${slug}/`),
     ...hobbies.map((h) => `/hobbys/${h.slug}/`),
+    "/datenschutz/",
   ];
 
   // Build-Zeitpunkt — der Workflow baut monatlich neu.
@@ -26,6 +27,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${SITE_URL}${pfad}`,
     lastModified,
     changeFrequency: "monthly" as const,
-    priority: pfad === "/" ? 1 : 0.7,
+    priority: pfad === "/" ? 1 : pfad === "/datenschutz/" ? 0.3 : 0.7,
   }));
 }

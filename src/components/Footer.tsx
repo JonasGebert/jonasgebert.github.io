@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { profile } from "@/content/profile";
 import { formatMonthYearFromDate } from "@/lib/format";
 
@@ -16,6 +17,14 @@ export function Footer() {
         © {build.getFullYear()} {profile.fullName}
       </p>
       <p className="mt-1">Erstellt mit Next.js · Stand: {formatMonthYearFromDate(build)}</p>
+      <p className="mt-3">
+        <Link
+          href="/datenschutz/"
+          className="underline underline-offset-4 transition-colors hover:text-cyan-300"
+        >
+          Datenschutzerklärung
+        </Link>
+      </p>
     </footer>
   );
 }
