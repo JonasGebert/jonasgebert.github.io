@@ -9,4 +9,4 @@
  * next.config.ts heraus, und dort löst der Config-Transpiler den Pfad-Alias `@/`
  * nicht auf — ein Import von profile.ts (das `@/lib/format` zieht) bricht den Build.
  */
-export const kontaktEmail = "BITTE-EINTRAGEN@example.com";
+export const kontaktEmail = "jgebert0203@gmail.com";
